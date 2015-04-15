@@ -1,0 +1,2313 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files (x86)\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@2.5.1
+3 info using node@v0.12.0
+4 verbose node symlink C:\Program Files (x86)\nodejs\\node.exe
+5 warn package.json tcp_pool@1.0.0 No description
+6 warn package.json tcp_pool@1.0.0 No repository field.
+7 warn package.json tcp_pool@1.0.0 No README data
+8 verbose install where, deps [ 'C:\\Users\\Luke\\Documents\\Projects\\tcp_pool',
+8 verbose install   [ 'generic-pool', 'express', 'csurf', 'fast' ] ]
+9 verbose install where, peers [ 'C:\\Users\\Luke\\Documents\\Projects\\tcp_pool', [] ]
+10 info preinstall tcp_pool@1.0.0
+11 verbose already installed skipping csurf@1.8.0 C:\Users\Luke\Documents\Projects\tcp_pool
+12 silly cache add args [ 'fast@0.4.1', null ]
+13 verbose cache add spec fast@0.4.1
+14 silly cache add parsed spec { raw: 'fast@0.4.1',
+14 silly cache add   scope: null,
+14 silly cache add   name: 'fast',
+14 silly cache add   rawSpec: '0.4.1',
+14 silly cache add   spec: '0.4.1',
+14 silly cache add   type: 'version' }
+15 verbose addNamed fast@0.4.1
+16 silly addNamed semver.valid 0.4.1
+17 silly addNamed semver.validRange 0.4.1
+18 silly mapToRegistry name fast
+19 silly mapToRegistry using default registry
+20 silly mapToRegistry registry https://registry.npmjs.org/
+21 silly mapToRegistry uri https://registry.npmjs.org/fast
+22 verbose addNameVersion registry:https://registry.npmjs.org/fast not in flight; fetching
+23 verbose already installed skipping generic-pool@2.2.0 C:\Users\Luke\Documents\Projects\tcp_pool
+24 verbose already installed skipping express@4.12.3 C:\Users\Luke\Documents\Projects\tcp_pool
+25 verbose request uri https://registry.npmjs.org/fast
+26 verbose request no auth needed
+27 info attempt registry request try #1 at 12:51:55 PM
+28 verbose request id d59a49020095e240
+29 verbose etag "766MH78JDHMVS7BM7KCAM809A"
+30 http request GET https://registry.npmjs.org/fast
+31 http 304 https://registry.npmjs.org/fast
+32 silly get cb [ 304,
+32 silly get   { date: 'Wed, 15 Apr 2015 16:52:00 GMT',
+32 silly get     server: 'Apache',
+32 silly get     via: '1.1 varnish',
+32 silly get     'last-modified': 'Wed, 15 Apr 2015 16:52:00 GMT',
+32 silly get     'cache-control': 'max-age=60',
+32 silly get     etag: '"766MH78JDHMVS7BM7KCAM809A"',
+32 silly get     age: '0',
+32 silly get     'x-served-by': 'cache-atl6225-ATL',
+32 silly get     'x-cache': 'MISS',
+32 silly get     'x-cache-hits': '0',
+32 silly get     'x-timer': 'S1429116720.420460,VS0,VE160',
+32 silly get     vary: 'Accept',
+32 silly get     'content-length': '0',
+32 silly get     'keep-alive': 'timeout=10, max=50',
+32 silly get     connection: 'Keep-Alive' } ]
+33 verbose etag https://registry.npmjs.org/fast from cache
+34 verbose get saving fast to C:\Users\Luke\AppData\Roaming\npm-cache\registry.npmjs.org\fast\.cache.json
+35 silly cache afterAdd fast@0.4.1
+36 verbose afterAdd C:\Users\Luke\AppData\Roaming\npm-cache\fast\0.4.1\package\package.json not in flight; writing
+37 verbose afterAdd C:\Users\Luke\AppData\Roaming\npm-cache\fast\0.4.1\package\package.json written
+38 silly install resolved [ { author: { name: 'Mark Cavage', email: 'mcavage@gmail.com' },
+38 silly install resolved     contributors: [ [Object], [Object], [Object], [Object] ],
+38 silly install resolved     name: 'fast',
+38 silly install resolved     homepage: 'http://mcavage.github.com/node-fast',
+38 silly install resolved     version: '0.4.1',
+38 silly install resolved     repository: { type: 'git', url: 'git://github.com/mcavage/node-fast.git' },
+38 silly install resolved     main: 'lib/index.js',
+38 silly install resolved     engines: { node: '>=0.8.22' },
+38 silly install resolved     dependencies:
+38 silly install resolved      { 'assert-plus': '0.1.5',
+38 silly install resolved        backoff: '2.4.0',
+38 silly install resolved        crc: '0.2.1',
+38 silly install resolved        microtime: '1.0.1',
+38 silly install resolved        once: '1.3.0',
+38 silly install resolved        'readable-stream': '1.1.10',
+38 silly install resolved        verror: '1.3.6',
+38 silly install resolved        'dtrace-provider': '0.3.0' },
+38 silly install resolved     optionalDependencies: { 'dtrace-provider': '0.3.0' },
+38 silly install resolved     devDependencies: { tape: '2.14.0', faucet: '0.0.1', istanbul: '0.3.0' },
+38 silly install resolved     scripts:
+38 silly install resolved      { report: 'istanbul report html && open ./coverage/lcov-report/index.html',
+38 silly install resolved        test: 'istanbul cover --print none test/test.js | ./node_modules/.bin/faucet' },
+38 silly install resolved     description: '`fast` is a very small JSON over TCP messaging framework.  Effectively, it lets you write RPC systems that "stream" many results back for a single message (not in the sense of a streaming JSON parser, but in the sense of many objects that are correlated).',
+38 silly install resolved     bugs: { url: 'https://github.com/mcavage/node-fast/issues' },
+38 silly install resolved     _id: 'fast@0.4.1',
+38 silly install resolved     _shasum: '4fb1c6aa287f79c9b15244f5ea1eae981b097d8c',
+38 silly install resolved     _resolved: 'https://registry.npmjs.org/fast/-/fast-0.4.1.tgz',
+38 silly install resolved     _from: 'fast@0.4.1',
+38 silly install resolved     _npmVersion: '2.0.0',
+38 silly install resolved     _npmUser: { name: 'pfmooney', email: 'patrick.f.mooney@gmail.com' },
+38 silly install resolved     maintainers: [ [Object], [Object] ],
+38 silly install resolved     dist:
+38 silly install resolved      { shasum: '4fb1c6aa287f79c9b15244f5ea1eae981b097d8c',
+38 silly install resolved        tarball: 'http://registry.npmjs.org/fast/-/fast-0.4.1.tgz' },
+38 silly install resolved     directories: {},
+38 silly install resolved     readme: 'ERROR: No README data found!' } ]
+39 info install fast@0.4.1 into C:\Users\Luke\Documents\Projects\tcp_pool
+40 info installOne fast@0.4.1
+41 verbose installOne of fast to C:\Users\Luke\Documents\Projects\tcp_pool not in flight; installing
+42 verbose lock using C:\Users\Luke\AppData\Roaming\npm-cache\_locks\fast-b45fbd47d88d3211.lock for C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast
+43 silly install write writing fast 0.4.1 to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast
+44 silly cache addNamed cb fast@0.4.1
+45 verbose unbuild node_modules\fast
+46 verbose gentlyRm vacuuming C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast
+47 verbose tar unpack C:\Users\Luke\AppData\Roaming\npm-cache\fast\0.4.1\package.tgz
+48 verbose tar unpacking to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast
+49 verbose gentlyRm vacuuming C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast
+50 silly gunzTarPerm modes [ '777', '666' ]
+51 silly gunzTarPerm extractEntry package.json
+52 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+53 silly gunzTarPerm extractEntry .npmignore
+54 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+55 silly gunzTarPerm extractEntry README.md
+56 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+57 silly gunzTarPerm extractEntry CHANGES.md
+58 silly gunzTarPerm modified mode [ 'CHANGES.md', 420, 438 ]
+59 silly gunzTarPerm extractEntry lib/client.js
+60 silly gunzTarPerm modified mode [ 'lib/client.js', 420, 438 ]
+61 silly gunzTarPerm extractEntry lib/index.js
+62 silly gunzTarPerm modified mode [ 'lib/index.js', 420, 438 ]
+63 silly gunzTarPerm extractEntry lib/server.js
+64 silly gunzTarPerm modified mode [ 'lib/server.js', 420, 438 ]
+65 silly gunzTarPerm extractEntry lib/protocol/dtrace.js
+66 silly gunzTarPerm modified mode [ 'lib/protocol/dtrace.js', 420, 438 ]
+67 silly gunzTarPerm extractEntry lib/protocol/index.js
+68 silly gunzTarPerm modified mode [ 'lib/protocol/index.js', 420, 438 ]
+69 silly gunzTarPerm extractEntry lib/protocol/message_decoder.js
+70 silly gunzTarPerm modified mode [ 'lib/protocol/message_decoder.js', 420, 438 ]
+71 silly gunzTarPerm extractEntry lib/protocol/message_encoder.js
+72 silly gunzTarPerm modified mode [ 'lib/protocol/message_encoder.js', 420, 438 ]
+73 silly gunzTarPerm extractEntry lib/protocol/protocol.js
+74 silly gunzTarPerm modified mode [ 'lib/protocol/protocol.js', 420, 438 ]
+75 silly gunzTarPerm extractEntry lib/protocol/rpc_decoder.js
+76 silly gunzTarPerm modified mode [ 'lib/protocol/rpc_decoder.js', 420, 438 ]
+77 silly gunzTarPerm extractEntry lib/protocol/rpc_encoder.js
+78 silly gunzTarPerm modified mode [ 'lib/protocol/rpc_encoder.js', 420, 438 ]
+79 silly gunzTarPerm extractEntry test/client.test.js
+80 silly gunzTarPerm modified mode [ 'test/client.test.js', 420, 438 ]
+81 silly gunzTarPerm extractEntry test/message.test.js
+82 silly gunzTarPerm modified mode [ 'test/message.test.js', 420, 438 ]
+83 silly gunzTarPerm extractEntry test/rpc.test.js
+84 silly gunzTarPerm modified mode [ 'test/rpc.test.js', 420, 438 ]
+85 silly gunzTarPerm extractEntry test/test.js
+86 silly gunzTarPerm modified mode [ 'test/test.js', 420, 438 ]
+87 info preinstall fast@0.4.1
+88 silly prepareForInstallMany adding assert-plus@0.1.5 from fast dependencies
+89 silly prepareForInstallMany adding backoff@2.4.0 from fast dependencies
+90 silly prepareForInstallMany adding crc@0.2.1 from fast dependencies
+91 silly prepareForInstallMany adding microtime@1.0.1 from fast dependencies
+92 silly prepareForInstallMany adding once@1.3.0 from fast dependencies
+93 silly prepareForInstallMany adding readable-stream@1.1.10 from fast dependencies
+94 silly prepareForInstallMany adding verror@1.3.6 from fast dependencies
+95 silly prepareForInstallMany adding dtrace-provider@0.3.0 from fast dependencies
+96 silly cache add args [ 'assert-plus@0.1.5', null ]
+97 verbose cache add spec assert-plus@0.1.5
+98 silly cache add args [ 'backoff@2.4.0', null ]
+99 verbose cache add spec backoff@2.4.0
+100 silly cache add parsed spec { raw: 'assert-plus@0.1.5',
+100 silly cache add   scope: null,
+100 silly cache add   name: 'assert-plus',
+100 silly cache add   rawSpec: '0.1.5',
+100 silly cache add   spec: '0.1.5',
+100 silly cache add   type: 'version' }
+101 verbose addNamed assert-plus@0.1.5
+102 silly addNamed semver.valid 0.1.5
+103 silly addNamed semver.validRange 0.1.5
+104 silly mapToRegistry name assert-plus
+105 silly mapToRegistry using default registry
+106 silly mapToRegistry registry https://registry.npmjs.org/
+107 silly mapToRegistry uri https://registry.npmjs.org/assert-plus
+108 verbose addNameVersion registry:https://registry.npmjs.org/assert-plus not in flight; fetching
+109 silly cache add parsed spec { raw: 'backoff@2.4.0',
+109 silly cache add   scope: null,
+109 silly cache add   name: 'backoff',
+109 silly cache add   rawSpec: '2.4.0',
+109 silly cache add   spec: '2.4.0',
+109 silly cache add   type: 'version' }
+110 verbose addNamed backoff@2.4.0
+111 silly addNamed semver.valid 2.4.0
+112 silly addNamed semver.validRange 2.4.0
+113 silly mapToRegistry name backoff
+114 silly mapToRegistry using default registry
+115 silly mapToRegistry registry https://registry.npmjs.org/
+116 silly mapToRegistry uri https://registry.npmjs.org/backoff
+117 verbose addNameVersion registry:https://registry.npmjs.org/backoff not in flight; fetching
+118 silly cache add args [ 'crc@0.2.1', null ]
+119 verbose cache add spec crc@0.2.1
+120 silly cache add parsed spec { raw: 'crc@0.2.1',
+120 silly cache add   scope: null,
+120 silly cache add   name: 'crc',
+120 silly cache add   rawSpec: '0.2.1',
+120 silly cache add   spec: '0.2.1',
+120 silly cache add   type: 'version' }
+121 verbose addNamed crc@0.2.1
+122 silly addNamed semver.valid 0.2.1
+123 silly addNamed semver.validRange 0.2.1
+124 silly mapToRegistry name crc
+125 silly mapToRegistry using default registry
+126 silly mapToRegistry registry https://registry.npmjs.org/
+127 silly mapToRegistry uri https://registry.npmjs.org/crc
+128 verbose addNameVersion registry:https://registry.npmjs.org/crc not in flight; fetching
+129 silly cache add args [ 'microtime@1.0.1', null ]
+130 verbose cache add spec microtime@1.0.1
+131 silly cache add parsed spec { raw: 'microtime@1.0.1',
+131 silly cache add   scope: null,
+131 silly cache add   name: 'microtime',
+131 silly cache add   rawSpec: '1.0.1',
+131 silly cache add   spec: '1.0.1',
+131 silly cache add   type: 'version' }
+132 verbose addNamed microtime@1.0.1
+133 silly addNamed semver.valid 1.0.1
+134 silly addNamed semver.validRange 1.0.1
+135 silly mapToRegistry name microtime
+136 silly mapToRegistry using default registry
+137 silly mapToRegistry registry https://registry.npmjs.org/
+138 silly mapToRegistry uri https://registry.npmjs.org/microtime
+139 verbose addNameVersion registry:https://registry.npmjs.org/microtime not in flight; fetching
+140 silly cache add args [ 'once@1.3.0', null ]
+141 verbose cache add spec once@1.3.0
+142 silly cache add parsed spec { raw: 'once@1.3.0',
+142 silly cache add   scope: null,
+142 silly cache add   name: 'once',
+142 silly cache add   rawSpec: '1.3.0',
+142 silly cache add   spec: '1.3.0',
+142 silly cache add   type: 'version' }
+143 verbose addNamed once@1.3.0
+144 silly addNamed semver.valid 1.3.0
+145 silly addNamed semver.validRange 1.3.0
+146 silly mapToRegistry name once
+147 silly mapToRegistry using default registry
+148 silly mapToRegistry registry https://registry.npmjs.org/
+149 silly mapToRegistry uri https://registry.npmjs.org/once
+150 verbose addNameVersion registry:https://registry.npmjs.org/once not in flight; fetching
+151 silly cache add args [ 'readable-stream@1.1.10', null ]
+152 verbose cache add spec readable-stream@1.1.10
+153 silly cache add parsed spec { raw: 'readable-stream@1.1.10',
+153 silly cache add   scope: null,
+153 silly cache add   name: 'readable-stream',
+153 silly cache add   rawSpec: '1.1.10',
+153 silly cache add   spec: '1.1.10',
+153 silly cache add   type: 'version' }
+154 verbose addNamed readable-stream@1.1.10
+155 silly addNamed semver.valid 1.1.10
+156 silly addNamed semver.validRange 1.1.10
+157 silly mapToRegistry name readable-stream
+158 silly mapToRegistry using default registry
+159 silly mapToRegistry registry https://registry.npmjs.org/
+160 silly mapToRegistry uri https://registry.npmjs.org/readable-stream
+161 verbose addNameVersion registry:https://registry.npmjs.org/readable-stream not in flight; fetching
+162 silly cache add args [ 'verror@1.3.6', null ]
+163 verbose cache add spec verror@1.3.6
+164 silly cache add parsed spec { raw: 'verror@1.3.6',
+164 silly cache add   scope: null,
+164 silly cache add   name: 'verror',
+164 silly cache add   rawSpec: '1.3.6',
+164 silly cache add   spec: '1.3.6',
+164 silly cache add   type: 'version' }
+165 verbose addNamed verror@1.3.6
+166 silly addNamed semver.valid 1.3.6
+167 silly addNamed semver.validRange 1.3.6
+168 silly mapToRegistry name verror
+169 silly mapToRegistry using default registry
+170 silly mapToRegistry registry https://registry.npmjs.org/
+171 silly mapToRegistry uri https://registry.npmjs.org/verror
+172 verbose addNameVersion registry:https://registry.npmjs.org/verror not in flight; fetching
+173 silly cache add args [ 'dtrace-provider@0.3.0', null ]
+174 verbose cache add spec dtrace-provider@0.3.0
+175 silly cache add parsed spec { raw: 'dtrace-provider@0.3.0',
+175 silly cache add   scope: null,
+175 silly cache add   name: 'dtrace-provider',
+175 silly cache add   rawSpec: '0.3.0',
+175 silly cache add   spec: '0.3.0',
+175 silly cache add   type: 'version' }
+176 verbose addNamed dtrace-provider@0.3.0
+177 silly addNamed semver.valid 0.3.0
+178 silly addNamed semver.validRange 0.3.0
+179 silly mapToRegistry name dtrace-provider
+180 silly mapToRegistry using default registry
+181 silly mapToRegistry registry https://registry.npmjs.org/
+182 silly mapToRegistry uri https://registry.npmjs.org/dtrace-provider
+183 verbose addNameVersion registry:https://registry.npmjs.org/dtrace-provider not in flight; fetching
+184 verbose request uri https://registry.npmjs.org/crc
+185 verbose request no auth needed
+186 info attempt registry request try #1 at 12:51:56 PM
+187 verbose etag "9KLHMWPTPD5YTV8S7DC5G1ODQ"
+188 http request GET https://registry.npmjs.org/crc
+189 verbose request uri https://registry.npmjs.org/assert-plus
+190 verbose request no auth needed
+191 info attempt registry request try #1 at 12:51:56 PM
+192 verbose etag "4JM0LYK3BPD8A3N7QGNF6ZJK0"
+193 http request GET https://registry.npmjs.org/assert-plus
+194 verbose request uri https://registry.npmjs.org/once
+195 verbose request no auth needed
+196 info attempt registry request try #1 at 12:51:56 PM
+197 verbose etag "B9N1KJH1QOWAYR3K7C1IMC28C"
+198 http request GET https://registry.npmjs.org/once
+199 verbose request uri https://registry.npmjs.org/backoff
+200 verbose request no auth needed
+201 info attempt registry request try #1 at 12:51:56 PM
+202 verbose etag "B30B5J1I2WDCI3E6L4ZCIFPZN"
+203 http request GET https://registry.npmjs.org/backoff
+204 verbose request uri https://registry.npmjs.org/verror
+205 verbose request no auth needed
+206 info attempt registry request try #1 at 12:51:56 PM
+207 verbose etag "BOVXM25KXVNVORDCLMR51O50"
+208 http request GET https://registry.npmjs.org/verror
+209 verbose request uri https://registry.npmjs.org/readable-stream
+210 verbose request no auth needed
+211 info attempt registry request try #1 at 12:51:56 PM
+212 verbose etag "4U67J5EHI8O2AY605T2EPPXP7"
+213 http request GET https://registry.npmjs.org/readable-stream
+214 verbose request uri https://registry.npmjs.org/dtrace-provider
+215 verbose request no auth needed
+216 info attempt registry request try #1 at 12:51:56 PM
+217 verbose etag "D07VX37I0GEURPKV14RGZOGI4"
+218 http request GET https://registry.npmjs.org/dtrace-provider
+219 verbose request uri https://registry.npmjs.org/microtime
+220 verbose request no auth needed
+221 info attempt registry request try #1 at 12:51:56 PM
+222 verbose etag "500WJ3AJEGGOAOWG1AQQDDFN"
+223 http request GET https://registry.npmjs.org/microtime
+224 http 304 https://registry.npmjs.org/crc
+225 silly get cb [ 304,
+225 silly get   { date: 'Wed, 15 Apr 2015 16:52:01 GMT',
+225 silly get     server: 'Apache',
+225 silly get     via: '1.1 varnish',
+225 silly get     'last-modified': 'Wed, 15 Apr 2015 16:52:01 GMT',
+225 silly get     'cache-control': 'max-age=60',
+225 silly get     etag: '"9KLHMWPTPD5YTV8S7DC5G1ODQ"',
+225 silly get     age: '39',
+225 silly get     'x-served-by': 'cache-atl6227-ATL',
+225 silly get     'x-cache': 'HIT',
+225 silly get     'x-cache-hits': '1',
+225 silly get     'x-timer': 'S1429116721.051022,VS0,VE1',
+225 silly get     vary: 'Accept',
+225 silly get     'content-length': '0',
+225 silly get     'keep-alive': 'timeout=10, max=50',
+225 silly get     connection: 'Keep-Alive' } ]
+226 verbose etag https://registry.npmjs.org/crc from cache
+227 verbose get saving crc to C:\Users\Luke\AppData\Roaming\npm-cache\registry.npmjs.org\crc\.cache.json
+228 http 200 https://registry.npmjs.org/assert-plus
+229 silly get cb [ 200,
+229 silly get   { date: 'Wed, 15 Apr 2015 16:52:01 GMT',
+229 silly get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+229 silly get     etag: '"BJ6UE1EGKYKF2OZ2UJOCA8YAB"',
+229 silly get     'content-type': 'application/json',
+229 silly get     'cache-control': 'max-age=60',
+229 silly get     'content-length': '8852',
+229 silly get     'accept-ranges': 'bytes',
+229 silly get     via: '1.1 varnish',
+229 silly get     age: '12',
+229 silly get     'x-served-by': 'cache-atl6227-ATL',
+229 silly get     'x-cache': 'HIT',
+229 silly get     'x-cache-hits': '3',
+229 silly get     'x-timer': 'S1429116721.054198,VS0,VE0',
+229 silly get     vary: 'Accept',
+229 silly get     'keep-alive': 'timeout=10, max=50',
+229 silly get     connection: 'Keep-Alive' } ]
+230 verbose get saving assert-plus to C:\Users\Luke\AppData\Roaming\npm-cache\registry.npmjs.org\assert-plus\.cache.json
+231 http 304 https://registry.npmjs.org/backoff
+232 silly get cb [ 304,
+232 silly get   { date: 'Wed, 15 Apr 2015 16:52:01 GMT',
+232 silly get     server: 'Apache',
+232 silly get     via: '1.1 varnish',
+232 silly get     'last-modified': 'Wed, 15 Apr 2015 16:11:26 GMT',
+232 silly get     'cache-control': 'max-age=60',
+232 silly get     etag: '"B30B5J1I2WDCI3E6L4ZCIFPZN"',
+232 silly get     age: '57',
+232 silly get     'x-served-by': 'cache-atl6228-ATL',
+232 silly get     'x-cache': 'HIT',
+232 silly get     'x-cache-hits': '12',
+232 silly get     'x-timer': 'S1429116721.052205,VS0,VE0',
+232 silly get     vary: 'Accept',
+232 silly get     'content-length': '0',
+232 silly get     'keep-alive': 'timeout=10, max=50',
+232 silly get     connection: 'Keep-Alive' } ]
+233 verbose etag https://registry.npmjs.org/backoff from cache
+234 verbose get saving backoff to C:\Users\Luke\AppData\Roaming\npm-cache\registry.npmjs.org\backoff\.cache.json
+235 http 304 https://registry.npmjs.org/verror
+236 silly get cb [ 304,
+236 silly get   { date: 'Wed, 15 Apr 2015 16:52:01 GMT',
+236 silly get     server: 'Apache',
+236 silly get     via: '1.1 varnish',
+236 silly get     'last-modified': 'Wed, 15 Apr 2015 16:52:01 GMT',
+236 silly get     'cache-control': 'max-age=60',
+236 silly get     etag: '"BOVXM25KXVNVORDCLMR51O50"',
+236 silly get     age: '57',
+236 silly get     'x-served-by': 'cache-atl6233-ATL',
+236 silly get     'x-cache': 'HIT',
+236 silly get     'x-cache-hits': '1',
+236 silly get     'x-timer': 'S1429116721.056002,VS0,VE0',
+236 silly get     vary: 'Accept',
+236 silly get     'content-length': '0',
+236 silly get     'keep-alive': 'timeout=10, max=50',
+236 silly get     connection: 'Keep-Alive' } ]
+237 verbose etag https://registry.npmjs.org/verror from cache
+238 verbose get saving verror to C:\Users\Luke\AppData\Roaming\npm-cache\registry.npmjs.org\verror\.cache.json
+239 http 304 https://registry.npmjs.org/once
+240 silly get cb [ 304,
+240 silly get   { date: 'Wed, 15 Apr 2015 16:52:01 GMT',
+240 silly get     server: 'Apache',
+240 silly get     via: '1.1 varnish',
+240 silly get     'last-modified': 'Wed, 15 Apr 2015 16:52:01 GMT',
+240 silly get     'cache-control': 'max-age=60',
+240 silly get     etag: '"B9N1KJH1QOWAYR3K7C1IMC28C"',
+240 silly get     age: '3',
+240 silly get     'x-served-by': 'cache-atl6232-ATL',
+240 silly get     'x-cache': 'HIT',
+240 silly get     'x-cache-hits': '1',
+240 silly get     'x-timer': 'S1429116721.060654,VS0,VE1',
+240 silly get     vary: 'Accept',
+240 silly get     'content-length': '0',
+240 silly get     'keep-alive': 'timeout=10, max=50',
+240 silly get     connection: 'Keep-Alive' } ]
+241 verbose etag https://registry.npmjs.org/once from cache
+242 verbose get saving once to C:\Users\Luke\AppData\Roaming\npm-cache\registry.npmjs.org\once\.cache.json
+243 silly mapToRegistry name assert-plus
+244 silly mapToRegistry using default registry
+245 silly mapToRegistry registry https://registry.npmjs.org/
+246 silly mapToRegistry uri https://registry.npmjs.org/assert-plus
+247 verbose addRemoteTarball https://registry.npmjs.org/assert-plus/-/assert-plus-0.1.5.tgz not in flight; adding
+248 verbose addRemoteTarball [ 'https://registry.npmjs.org/assert-plus/-/assert-plus-0.1.5.tgz',
+248 verbose addRemoteTarball   'ee74009413002d84cec7219c6ac811812e723160' ]
+249 http 304 https://registry.npmjs.org/dtrace-provider
+250 silly get cb [ 304,
+250 silly get   { date: 'Wed, 15 Apr 2015 16:52:01 GMT',
+250 silly get     server: 'Apache',
+250 silly get     via: '1.1 varnish',
+250 silly get     'last-modified': 'Wed, 15 Apr 2015 16:40:39 GMT',
+250 silly get     'cache-control': 'max-age=60',
+250 silly get     etag: '"D07VX37I0GEURPKV14RGZOGI4"',
+250 silly get     age: '57',
+250 silly get     'x-served-by': 'cache-atl6229-ATL',
+250 silly get     'x-cache': 'HIT',
+250 silly get     'x-cache-hits': '13',
+250 silly get     'x-timer': 'S1429116721.070351,VS0,VE0',
+250 silly get     vary: 'Accept',
+250 silly get     'content-length': '0',
+250 silly get     'keep-alive': 'timeout=10, max=50',
+250 silly get     connection: 'Keep-Alive' } ]
+251 verbose etag https://registry.npmjs.org/dtrace-provider from cache
+252 verbose get saving dtrace-provider to C:\Users\Luke\AppData\Roaming\npm-cache\registry.npmjs.org\dtrace-provider\.cache.json
+253 info retry fetch attempt 1 at 12:51:56 PM
+254 info attempt registry request try #1 at 12:51:56 PM
+255 http fetch GET https://registry.npmjs.org/assert-plus/-/assert-plus-0.1.5.tgz
+256 silly cache afterAdd backoff@2.4.0
+257 verbose afterAdd C:\Users\Luke\AppData\Roaming\npm-cache\backoff\2.4.0\package\package.json not in flight; writing
+258 silly cache afterAdd verror@1.3.6
+259 verbose afterAdd C:\Users\Luke\AppData\Roaming\npm-cache\verror\1.3.6\package\package.json not in flight; writing
+260 verbose afterAdd C:\Users\Luke\AppData\Roaming\npm-cache\backoff\2.4.0\package\package.json written
+261 silly cache afterAdd once@1.3.0
+262 verbose afterAdd C:\Users\Luke\AppData\Roaming\npm-cache\once\1.3.0\package\package.json not in flight; writing
+263 verbose afterAdd C:\Users\Luke\AppData\Roaming\npm-cache\verror\1.3.6\package\package.json written
+264 verbose afterAdd C:\Users\Luke\AppData\Roaming\npm-cache\once\1.3.0\package\package.json written
+265 silly cache afterAdd crc@0.2.1
+266 verbose afterAdd C:\Users\Luke\AppData\Roaming\npm-cache\crc\0.2.1\package\package.json not in flight; writing
+267 verbose afterAdd C:\Users\Luke\AppData\Roaming\npm-cache\crc\0.2.1\package\package.json written
+268 silly cache afterAdd dtrace-provider@0.3.0
+269 verbose afterAdd C:\Users\Luke\AppData\Roaming\npm-cache\dtrace-provider\0.3.0\package\package.json not in flight; writing
+270 verbose afterAdd C:\Users\Luke\AppData\Roaming\npm-cache\dtrace-provider\0.3.0\package\package.json written
+271 http 200 https://registry.npmjs.org/readable-stream
+272 silly get cb [ 200,
+272 silly get   { date: 'Wed, 15 Apr 2015 16:52:01 GMT',
+272 silly get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+272 silly get     etag: '"32FILY7NIYUJ856MT6RLM79TM"',
+272 silly get     'content-type': 'application/json',
+272 silly get     'cache-control': 'max-age=60',
+272 silly get     'content-length': '42556',
+272 silly get     'accept-ranges': 'bytes',
+272 silly get     via: '1.1 varnish',
+272 silly get     age: '43',
+272 silly get     'x-served-by': 'cache-atl6233-ATL',
+272 silly get     'x-cache': 'HIT',
+272 silly get     'x-cache-hits': '15',
+272 silly get     'x-timer': 'S1429116721.065383,VS0,VE0',
+272 silly get     vary: 'Accept',
+272 silly get     'keep-alive': 'timeout=10, max=50',
+272 silly get     connection: 'Keep-Alive' } ]
+273 verbose get saving readable-stream to C:\Users\Luke\AppData\Roaming\npm-cache\registry.npmjs.org\readable-stream\.cache.json
+274 silly mapToRegistry name readable-stream
+275 silly mapToRegistry using default registry
+276 silly mapToRegistry registry https://registry.npmjs.org/
+277 silly mapToRegistry uri https://registry.npmjs.org/readable-stream
+278 verbose addRemoteTarball https://registry.npmjs.org/readable-stream/-/readable-stream-1.1.10.tgz not in flight; adding
+279 verbose addRemoteTarball [ 'https://registry.npmjs.org/readable-stream/-/readable-stream-1.1.10.tgz',
+279 verbose addRemoteTarball   'd4dc2e5319e9c90d1e71c69390ef62cd90827f65' ]
+280 http 304 https://registry.npmjs.org/microtime
+281 silly get cb [ 304,
+281 silly get   { date: 'Wed, 15 Apr 2015 16:52:01 GMT',
+281 silly get     server: 'Apache',
+281 silly get     via: '1.1 varnish',
+281 silly get     'last-modified': 'Wed, 15 Apr 2015 16:52:01 GMT',
+281 silly get     'cache-control': 'max-age=60',
+281 silly get     etag: '"500WJ3AJEGGOAOWG1AQQDDFN"',
+281 silly get     age: '0',
+281 silly get     'x-served-by': 'cache-atl6221-ATL',
+281 silly get     'x-cache': 'HIT',
+281 silly get     'x-cache-hits': '1',
+281 silly get     'x-timer': 'S1429116721.074055,VS0,VE77',
+281 silly get     vary: 'Accept',
+281 silly get     'content-length': '0',
+281 silly get     'keep-alive': 'timeout=10, max=50',
+281 silly get     connection: 'Keep-Alive' } ]
+282 verbose etag https://registry.npmjs.org/microtime from cache
+283 verbose get saving microtime to C:\Users\Luke\AppData\Roaming\npm-cache\registry.npmjs.org\microtime\.cache.json
+284 info retry fetch attempt 1 at 12:51:56 PM
+285 info attempt registry request try #1 at 12:51:56 PM
+286 http fetch GET https://registry.npmjs.org/readable-stream/-/readable-stream-1.1.10.tgz
+287 silly cache afterAdd microtime@1.0.1
+288 verbose afterAdd C:\Users\Luke\AppData\Roaming\npm-cache\microtime\1.0.1\package\package.json not in flight; writing
+289 verbose afterAdd C:\Users\Luke\AppData\Roaming\npm-cache\microtime\1.0.1\package\package.json written
+290 http fetch 200 https://registry.npmjs.org/assert-plus/-/assert-plus-0.1.5.tgz
+291 silly fetchAndShaCheck shasum ee74009413002d84cec7219c6ac811812e723160
+292 verbose addTmpTarball C:\Users\Luke\AppData\Local\Temp\npm-5792-94d8273a\registry.npmjs.org\assert-plus\-\assert-plus-0.1.5.tgz not in flight; adding
+293 verbose addTmpTarball already have metadata; skipping unpack for assert-plus@0.1.5
+294 silly cache afterAdd assert-plus@0.1.5
+295 verbose afterAdd C:\Users\Luke\AppData\Roaming\npm-cache\assert-plus\0.1.5\package\package.json not in flight; writing
+296 verbose afterAdd C:\Users\Luke\AppData\Roaming\npm-cache\assert-plus\0.1.5\package\package.json written
+297 http fetch 200 https://registry.npmjs.org/readable-stream/-/readable-stream-1.1.10.tgz
+298 silly fetchAndShaCheck shasum d4dc2e5319e9c90d1e71c69390ef62cd90827f65
+299 verbose addTmpTarball C:\Users\Luke\AppData\Local\Temp\npm-5792-94d8273a\registry.npmjs.org\readable-stream\-\readable-stream-1.1.10.tgz not in flight; adding
+300 verbose addTmpTarball already have metadata; skipping unpack for readable-stream@1.1.10
+301 silly cache afterAdd readable-stream@1.1.10
+302 verbose afterAdd C:\Users\Luke\AppData\Roaming\npm-cache\readable-stream\1.1.10\package\package.json not in flight; writing
+303 verbose afterAdd C:\Users\Luke\AppData\Roaming\npm-cache\readable-stream\1.1.10\package\package.json written
+304 silly install resolved [ { name: 'backoff',
+304 silly install resolved     description: 'Fibonacci and exponential backoffs.',
+304 silly install resolved     version: '2.4.0',
+304 silly install resolved     license: 'MIT',
+304 silly install resolved     author: { name: 'Mathieu Turcotte', email: 'turcotte.mat@gmail.com' },
+304 silly install resolved     keywords: [ 'backoff', 'retry', 'fibonacci', 'exponential' ],
+304 silly install resolved     repository:
+304 silly install resolved      { type: 'git',
+304 silly install resolved        url: 'https://github.com/MathieuTurcotte/node-backoff.git' },
+304 silly install resolved     dependencies: { precond: '0.2' },
+304 silly install resolved     devDependencies: { sinon: '1.10', nodeunit: '0.9' },
+304 silly install resolved     scripts:
+304 silly install resolved      { docco: 'docco lib/*.js lib/strategy/* index.js',
+304 silly install resolved        pretest: 'jshint lib/ tests/ examples/ index.js',
+304 silly install resolved        test: 'node_modules/nodeunit/bin/nodeunit tests/' },
+304 silly install resolved     engines: { node: '>= 0.6' },
+304 silly install resolved     file: [ 'index.js', 'lib' ],
+304 silly install resolved     bugs: { url: 'https://github.com/MathieuTurcotte/node-backoff/issues' },
+304 silly install resolved     _id: 'backoff@2.4.0',
+304 silly install resolved     dist:
+304 silly install resolved      { shasum: 'c5a2888e784a61e18d5cba310ef0f521fb107d4f',
+304 silly install resolved        tarball: 'http://registry.npmjs.org/backoff/-/backoff-2.4.0.tgz' },
+304 silly install resolved     _from: 'backoff@2.4.0',
+304 silly install resolved     _npmVersion: '1.3.11',
+304 silly install resolved     _npmUser: { name: 'mathieu', email: 'turcotte.mat@gmail.com' },
+304 silly install resolved     maintainers: [ [Object] ],
+304 silly install resolved     directories: {},
+304 silly install resolved     _shasum: 'c5a2888e784a61e18d5cba310ef0f521fb107d4f',
+304 silly install resolved     _resolved: 'https://registry.npmjs.org/backoff/-/backoff-2.4.0.tgz',
+304 silly install resolved     readme: 'ERROR: No README data found!',
+304 silly install resolved     homepage: 'https://github.com/MathieuTurcotte/node-backoff' },
+304 silly install resolved   { name: 'verror',
+304 silly install resolved     version: '1.3.6',
+304 silly install resolved     description: 'richer JavaScript errors',
+304 silly install resolved     main: './lib/verror.js',
+304 silly install resolved     repository:
+304 silly install resolved      { type: 'git',
+304 silly install resolved        url: 'git://github.com/davepacheco/node-verror.git' },
+304 silly install resolved     dependencies: { extsprintf: '1.0.2' },
+304 silly install resolved     engines: [ 'node >=0.6.0' ],
+304 silly install resolved     scripts: { test: 'make test' },
+304 silly install resolved     _id: 'verror@1.3.6',
+304 silly install resolved     dist:
+304 silly install resolved      { shasum: 'cff5df12946d297d2baaefaa2689e25be01c005c',
+304 silly install resolved        tarball: 'http://registry.npmjs.org/verror/-/verror-1.3.6.tgz' },
+304 silly install resolved     _npmVersion: '1.1.65',
+304 silly install resolved     _npmUser: { name: 'dap', email: 'dap@cs.brown.edu' },
+304 silly install resolved     maintainers: [ [Object] ],
+304 silly install resolved     directories: {},
+304 silly install resolved     _shasum: 'cff5df12946d297d2baaefaa2689e25be01c005c',
+304 silly install resolved     _resolved: 'https://registry.npmjs.org/verror/-/verror-1.3.6.tgz',
+304 silly install resolved     _from: 'verror@1.3.6',
+304 silly install resolved     bugs: { url: 'https://github.com/davepacheco/node-verror/issues' },
+304 silly install resolved     readme: 'ERROR: No README data found!',
+304 silly install resolved     homepage: 'https://github.com/davepacheco/node-verror' },
+304 silly install resolved   { name: 'once',
+304 silly install resolved     version: '1.3.0',
+304 silly install resolved     description: 'Run a function exactly one time',
+304 silly install resolved     main: 'once.js',
+304 silly install resolved     directories: { test: 'test' },
+304 silly install resolved     dependencies: {},
+304 silly install resolved     devDependencies: { tap: '~0.3.0' },
+304 silly install resolved     scripts: { test: 'tap test/*.js' },
+304 silly install resolved     repository: { type: 'git', url: 'git://github.com/isaacs/once' },
+304 silly install resolved     keywords: [ 'once', 'function', 'one', 'single' ],
+304 silly install resolved     author:
+304 silly install resolved      { name: 'Isaac Z. Schlueter',
+304 silly install resolved        email: 'i@izs.me',
+304 silly install resolved        url: 'http://blog.izs.me/' },
+304 silly install resolved     license: 'BSD',
+304 silly install resolved     bugs: { url: 'https://github.com/isaacs/once/issues' },
+304 silly install resolved     _id: 'once@1.3.0',
+304 silly install resolved     dist:
+304 silly install resolved      { shasum: '151af86bfc1f08c4b9f07d06ab250ffcbeb56581',
+304 silly install resolved        tarball: 'http://registry.npmjs.org/once/-/once-1.3.0.tgz' },
+304 silly install resolved     _from: 'once@1.3.0',
+304 silly install resolved     _npmVersion: '1.3.11',
+304 silly install resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+304 silly install resolved     maintainers: [ [Object] ],
+304 silly install resolved     _shasum: '151af86bfc1f08c4b9f07d06ab250ffcbeb56581',
+304 silly install resolved     _resolved: 'https://registry.npmjs.org/once/-/once-1.3.0.tgz',
+304 silly install resolved     readme: 'ERROR: No README data found!',
+304 silly install resolved     homepage: 'https://github.com/isaacs/once' },
+304 silly install resolved   { name: 'crc',
+304 silly install resolved     version: '0.2.1',
+304 silly install resolved     description: 'CRC JavaScript implementation',
+304 silly install resolved     author: { name: 'Alex Gorbatchev', email: 'alex.gorbatchev@gmail.com' },
+304 silly install resolved     contributors: [],
+304 silly install resolved     main: './lib/crc.js',
+304 silly install resolved     scripts: {},
+304 silly install resolved     directories: {},
+304 silly install resolved     devDependencies: { mocha: '*', should: '*' },
+304 silly install resolved     repository:
+304 silly install resolved      { type: 'git',
+304 silly install resolved        url: 'git://github.com/alexgorbatchev/node-crc.git' },
+304 silly install resolved     _id: 'crc@0.2.1',
+304 silly install resolved     dist:
+304 silly install resolved      { shasum: 'b1f111fc3abb9b83d3a291a6820cf6e8c7ef32d7',
+304 silly install resolved        tarball: 'http://registry.npmjs.org/crc/-/crc-0.2.1.tgz' },
+304 silly install resolved     _from: 'crc@0.2.1',
+304 silly install resolved     _npmVersion: '1.2.18',
+304 silly install resolved     _npmUser: { name: 'alexgorbatchev', email: 'alex.gorbatchev@gmail.com' },
+304 silly install resolved     maintainers: [ [Object] ],
+304 silly install resolved     _shasum: 'b1f111fc3abb9b83d3a291a6820cf6e8c7ef32d7',
+304 silly install resolved     _resolved: 'https://registry.npmjs.org/crc/-/crc-0.2.1.tgz',
+304 silly install resolved     bugs: { url: 'https://github.com/alexgorbatchev/node-crc/issues' },
+304 silly install resolved     readme: 'ERROR: No README data found!',
+304 silly install resolved     homepage: 'https://github.com/alexgorbatchev/node-crc' },
+304 silly install resolved   { name: 'dtrace-provider',
+304 silly install resolved     version: '0.3.0',
+304 silly install resolved     description: 'Native DTrace providers for node.js applications',
+304 silly install resolved     keywords: [ 'dtrace' ],
+304 silly install resolved     homepage: 'https://github.com/chrisa/node-dtrace-provider#readme',
+304 silly install resolved     author: { name: 'Chris Andrews', email: 'chris@nodnol.org' },
+304 silly install resolved     repository:
+304 silly install resolved      { type: 'git',
+304 silly install resolved        url: 'http://github.com/chrisa/node-dtrace-provider.git' },
+304 silly install resolved     engines: { node: '>=0.6' },
+304 silly install resolved     dependencies: { nan: '~1.3.0' },
+304 silly install resolved     devDependencies: { tap: '>=0.2.0' },
+304 silly install resolved     scripts: { install: 'scripts/install.js', test: 'tap test/*test.js' },
+304 silly install resolved     main: './dtrace-provider.js',
+304 silly install resolved     gitHead: '542557d3073b63efb64f0423d86a77ef41a3fcce',
+304 silly install resolved     bugs: { url: 'https://github.com/chrisa/node-dtrace-provider/issues' },
+304 silly install resolved     _id: 'dtrace-provider@0.3.0',
+304 silly install resolved     _shasum: '633ee973f0b38d153ca01c3144312469de0037e9',
+304 silly install resolved     _from: 'dtrace-provider@0.3.0',
+304 silly install resolved     _npmVersion: '2.0.0',
+304 silly install resolved     _npmUser: { name: 'tjfontaine', email: 'tjfontaine@gmail.com' },
+304 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+304 silly install resolved     dist:
+304 silly install resolved      { shasum: '633ee973f0b38d153ca01c3144312469de0037e9',
+304 silly install resolved        tarball: 'http://registry.npmjs.org/dtrace-provider/-/dtrace-provider-0.3.0.tgz' },
+304 silly install resolved     directories: {},
+304 silly install resolved     _resolved: 'https://registry.npmjs.org/dtrace-provider/-/dtrace-provider-0.3.0.tgz',
+304 silly install resolved     readme: 'ERROR: No README data found!' },
+304 silly install resolved   { name: 'microtime',
+304 silly install resolved     version: '1.0.1',
+304 silly install resolved     description: 'Get the current time in microseconds',
+304 silly install resolved     author:
+304 silly install resolved      { name: 'Wade Simmons',
+304 silly install resolved        email: 'wade@wades.im',
+304 silly install resolved        url: 'http://wades.im/mons' },
+304 silly install resolved     homepage: 'https://github.com/wadey/node-microtime',
+304 silly install resolved     repository:
+304 silly install resolved      { type: 'git',
+304 silly install resolved        url: 'git://github.com/wadey/node-microtime.git' },
+304 silly install resolved     main: './index',
+304 silly install resolved     engines: { node: '>= 0.8.0' },
+304 silly install resolved     scripts: { test: 'node test.js', install: 'node-gyp rebuild' },
+304 silly install resolved     dependencies: { bindings: '1.2.1', nan: '1.3.0' },
+304 silly install resolved     gypfile: true,
+304 silly install resolved     gitHead: '140b9f71593ca95f6e24090abd445348fb96c3a8',
+304 silly install resolved     bugs: { url: 'https://github.com/wadey/node-microtime/issues' },
+304 silly install resolved     _id: 'microtime@1.0.1',
+304 silly install resolved     _shasum: '0bd5fd18e6aad88726dc372e94e7daed620ad8ec',
+304 silly install resolved     _from: 'microtime@1.0.1',
+304 silly install resolved     _npmVersion: '1.4.21',
+304 silly install resolved     _npmUser: { name: 'wadey', email: 'wade@wades.im' },
+304 silly install resolved     maintainers: [ [Object] ],
+304 silly install resolved     dist:
+304 silly install resolved      { shasum: '0bd5fd18e6aad88726dc372e94e7daed620ad8ec',
+304 silly install resolved        tarball: 'http://registry.npmjs.org/microtime/-/microtime-1.0.1.tgz' },
+304 silly install resolved     directories: {},
+304 silly install resolved     _resolved: 'https://registry.npmjs.org/microtime/-/microtime-1.0.1.tgz',
+304 silly install resolved     readme: 'ERROR: No README data found!' },
+304 silly install resolved   { author: { name: 'Mark Cavage', email: 'mcavage@gmail.com' },
+304 silly install resolved     name: 'assert-plus',
+304 silly install resolved     description: 'Extra assertions on top of node\'s assert module',
+304 silly install resolved     version: '0.1.5',
+304 silly install resolved     main: './assert.js',
+304 silly install resolved     devDependencies: {},
+304 silly install resolved     optionalDependencies: {},
+304 silly install resolved     repository:
+304 silly install resolved      { type: 'git',
+304 silly install resolved        url: 'https://github.com/mcavage/node-assert-plus.git' },
+304 silly install resolved     engines: { node: '>=0.8' },
+304 silly install resolved     bugs: { url: 'https://github.com/mcavage/node-assert-plus/issues' },
+304 silly install resolved     dependencies: {},
+304 silly install resolved     _id: 'assert-plus@0.1.5',
+304 silly install resolved     dist:
+304 silly install resolved      { shasum: 'ee74009413002d84cec7219c6ac811812e723160',
+304 silly install resolved        tarball: 'http://registry.npmjs.org/assert-plus/-/assert-plus-0.1.5.tgz' },
+304 silly install resolved     _from: 'assert-plus@0.1.5',
+304 silly install resolved     _npmVersion: '1.3.11',
+304 silly install resolved     _npmUser: { name: 'mcavage', email: 'mcavage@gmail.com' },
+304 silly install resolved     maintainers: [ [Object] ],
+304 silly install resolved     directories: {},
+304 silly install resolved     _shasum: 'ee74009413002d84cec7219c6ac811812e723160',
+304 silly install resolved     _resolved: 'https://registry.npmjs.org/assert-plus/-/assert-plus-0.1.5.tgz' },
+304 silly install resolved   { name: 'readable-stream',
+304 silly install resolved     version: '1.1.10',
+304 silly install resolved     description: 'An exploration of a new kind of readable streams for Node.js',
+304 silly install resolved     main: 'readable.js',
+304 silly install resolved     dependencies:
+304 silly install resolved      { 'core-util-is': '~1.0.0',
+304 silly install resolved        string_decoder: '~0.10.x',
+304 silly install resolved        debuglog: '0.0.2' },
+304 silly install resolved     devDependencies: { tap: '~0.2.6' },
+304 silly install resolved     scripts: { test: 'tap test/simple/*.js' },
+304 silly install resolved     repository: { type: 'git', url: 'git://github.com/isaacs/readable-stream' },
+304 silly install resolved     keywords: [ 'readable', 'stream', 'pipe' ],
+304 silly install resolved     author:
+304 silly install resolved      { name: 'Isaac Z. Schlueter',
+304 silly install resolved        email: 'i@izs.me',
+304 silly install resolved        url: 'http://blog.izs.me/' },
+304 silly install resolved     license: 'MIT',
+304 silly install resolved     optionalDependencies: { debuglog: '0.0.2' },
+304 silly install resolved     bugs: { url: 'https://github.com/isaacs/readable-stream/issues' },
+304 silly install resolved     homepage: 'https://github.com/isaacs/readable-stream',
+304 silly install resolved     _id: 'readable-stream@1.1.10',
+304 silly install resolved     dist:
+304 silly install resolved      { shasum: 'd4dc2e5319e9c90d1e71c69390ef62cd90827f65',
+304 silly install resolved        tarball: 'http://registry.npmjs.org/readable-stream/-/readable-stream-1.1.10.tgz' },
+304 silly install resolved     _from: 'readable-stream@1.1.10',
+304 silly install resolved     _npmVersion: '1.3.24',
+304 silly install resolved     _npmUser: { name: 'rvagg', email: 'rod@vagg.org' },
+304 silly install resolved     maintainers: [ [Object] ],
+304 silly install resolved     directories: {},
+304 silly install resolved     _shasum: 'd4dc2e5319e9c90d1e71c69390ef62cd90827f65',
+304 silly install resolved     _resolved: 'https://registry.npmjs.org/readable-stream/-/readable-stream-1.1.10.tgz' } ]
+305 info install backoff@2.4.0 into C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast
+306 info install verror@1.3.6 into C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast
+307 info install once@1.3.0 into C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast
+308 info install crc@0.2.1 into C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast
+309 info install dtrace-provider@0.3.0 into C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast
+310 info install microtime@1.0.1 into C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast
+311 info install assert-plus@0.1.5 into C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast
+312 info install readable-stream@1.1.10 into C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast
+313 info installOne backoff@2.4.0
+314 verbose installOne of backoff to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast not in flight; installing
+315 info installOne verror@1.3.6
+316 verbose installOne of verror to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast not in flight; installing
+317 info installOne once@1.3.0
+318 verbose installOne of once to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast not in flight; installing
+319 info installOne crc@0.2.1
+320 verbose installOne of crc to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast not in flight; installing
+321 info installOne dtrace-provider@0.3.0
+322 verbose installOne of dtrace-provider to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast not in flight; installing
+323 info installOne microtime@1.0.1
+324 verbose installOne of microtime to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast not in flight; installing
+325 info installOne assert-plus@0.1.5
+326 verbose installOne of assert-plus to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast not in flight; installing
+327 info installOne readable-stream@1.1.10
+328 verbose installOne of readable-stream to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast not in flight; installing
+329 verbose lock using C:\Users\Luke\AppData\Roaming\npm-cache\_locks\backoff-771b76d5e1cb726a.lock for C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\backoff
+330 verbose lock using C:\Users\Luke\AppData\Roaming\npm-cache\_locks\verror-23d207e98ee2a4d0.lock for C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\verror
+331 verbose lock using C:\Users\Luke\AppData\Roaming\npm-cache\_locks\once-26191be570aa13b3.lock for C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\once
+332 verbose lock using C:\Users\Luke\AppData\Roaming\npm-cache\_locks\dtrace-provider-bf49dfdd3e5fe888.lock for C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\dtrace-provider
+333 verbose lock using C:\Users\Luke\AppData\Roaming\npm-cache\_locks\crc-663033bcd4fc5e40.lock for C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\crc
+334 silly install write writing backoff 2.4.0 to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\backoff
+335 silly cache addNamed cb backoff@2.4.0
+336 verbose unbuild node_modules\fast\node_modules\backoff
+337 verbose lock using C:\Users\Luke\AppData\Roaming\npm-cache\_locks\readable-stream-ee9e0c248fa44037.lock for C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\readable-stream
+338 silly install write writing verror 1.3.6 to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\verror
+339 silly cache addNamed cb verror@1.3.6
+340 verbose unbuild node_modules\fast\node_modules\verror
+341 silly install write writing once 1.3.0 to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\once
+342 silly cache addNamed cb once@1.3.0
+343 verbose unbuild node_modules\fast\node_modules\once
+344 silly install write writing dtrace-provider 0.3.0 to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\dtrace-provider
+345 silly cache addNamed cb dtrace-provider@0.3.0
+346 verbose unbuild node_modules\fast\node_modules\dtrace-provider
+347 silly install write writing crc 0.2.1 to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\crc
+348 silly cache addNamed cb crc@0.2.1
+349 verbose unbuild node_modules\fast\node_modules\crc
+350 silly install write writing readable-stream 1.1.10 to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\readable-stream
+351 verbose lock using C:\Users\Luke\AppData\Roaming\npm-cache\_locks\assert-plus-2a2275f04abc0a55.lock for C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\assert-plus
+352 verbose lock using C:\Users\Luke\AppData\Roaming\npm-cache\_locks\microtime-bb7e09a4efe784b5.lock for C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\microtime
+353 verbose gentlyRm vacuuming C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\backoff
+354 silly install write writing assert-plus 0.1.5 to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\assert-plus
+355 verbose gentlyRm vacuuming C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\verror
+356 silly install write writing microtime 1.0.1 to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\microtime
+357 silly cache addNamed cb microtime@1.0.1
+358 verbose unbuild node_modules\fast\node_modules\microtime
+359 verbose gentlyRm vacuuming C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\once
+360 verbose gentlyRm vacuuming C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\dtrace-provider
+361 verbose gentlyRm vacuuming C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\crc
+362 verbose tar unpack C:\Users\Luke\AppData\Roaming\npm-cache\backoff\2.4.0\package.tgz
+363 verbose tar unpacking to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\backoff
+364 verbose gentlyRm vacuuming C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\backoff
+365 verbose tar unpack C:\Users\Luke\AppData\Roaming\npm-cache\verror\1.3.6\package.tgz
+366 verbose tar unpacking to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\verror
+367 verbose gentlyRm vacuuming C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\verror
+368 verbose tar unpack C:\Users\Luke\AppData\Roaming\npm-cache\once\1.3.0\package.tgz
+369 verbose tar unpacking to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\once
+370 verbose gentlyRm vacuuming C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\once
+371 verbose tar unpack C:\Users\Luke\AppData\Roaming\npm-cache\dtrace-provider\0.3.0\package.tgz
+372 verbose tar unpacking to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\dtrace-provider
+373 verbose gentlyRm vacuuming C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\dtrace-provider
+374 verbose tar unpack C:\Users\Luke\AppData\Roaming\npm-cache\crc\0.2.1\package.tgz
+375 verbose tar unpacking to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\crc
+376 verbose gentlyRm vacuuming C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\crc
+377 silly gunzTarPerm modes [ '777', '666' ]
+378 silly gunzTarPerm modes [ '777', '666' ]
+379 verbose gentlyRm vacuuming C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\microtime
+380 silly gunzTarPerm modes [ '777', '666' ]
+381 silly gunzTarPerm modes [ '777', '666' ]
+382 silly gunzTarPerm modes [ '777', '666' ]
+383 verbose tar unpack C:\Users\Luke\AppData\Roaming\npm-cache\microtime\1.0.1\package.tgz
+384 verbose tar unpacking to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\microtime
+385 verbose gentlyRm vacuuming C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\microtime
+386 silly cache addNamed cb readable-stream@1.1.10
+387 verbose unbuild node_modules\fast\node_modules\readable-stream
+388 silly gunzTarPerm modes [ '777', '666' ]
+389 silly cache addNamed cb assert-plus@0.1.5
+390 verbose unbuild node_modules\fast\node_modules\assert-plus
+391 verbose gentlyRm vacuuming C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\readable-stream
+392 verbose tar unpack C:\Users\Luke\AppData\Roaming\npm-cache\readable-stream\1.1.10\package.tgz
+393 verbose tar unpacking to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\readable-stream
+394 verbose gentlyRm vacuuming C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\readable-stream
+395 verbose gentlyRm vacuuming C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\assert-plus
+396 silly gunzTarPerm extractEntry package.json
+397 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+398 silly gunzTarPerm modes [ '777', '666' ]
+399 verbose tar unpack C:\Users\Luke\AppData\Roaming\npm-cache\assert-plus\0.1.5\package.tgz
+400 verbose tar unpacking to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\assert-plus
+401 verbose gentlyRm vacuuming C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\assert-plus
+402 silly gunzTarPerm extractEntry package.json
+403 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+404 silly gunzTarPerm modes [ '777', '666' ]
+405 silly gunzTarPerm extractEntry package.json
+406 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+407 silly gunzTarPerm extractEntry .npmignore
+408 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+409 silly gunzTarPerm extractEntry README.md
+410 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+411 silly gunzTarPerm extractEntry README.md
+412 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+413 silly gunzTarPerm extractEntry LICENSE
+414 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+415 silly gunzTarPerm extractEntry package.json
+416 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+417 silly gunzTarPerm extractEntry package.json
+418 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+419 silly gunzTarPerm extractEntry .npmignore
+420 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+421 silly gunzTarPerm extractEntry README.md
+422 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+423 silly gunzTarPerm extractEntry package.json
+424 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+425 silly gunzTarPerm extractEntry .npmignore
+426 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+427 silly gunzTarPerm extractEntry README.md
+428 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+429 silly gunzTarPerm extractEntry README.md
+430 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+431 silly gunzTarPerm extractEntry assert.js
+432 silly gunzTarPerm modified mode [ 'assert.js', 420, 438 ]
+433 silly gunzTarPerm extractEntry LICENCE
+434 silly gunzTarPerm modified mode [ 'LICENCE', 420, 438 ]
+435 silly gunzTarPerm extractEntry dtrace-provider.js
+436 silly gunzTarPerm modified mode [ 'dtrace-provider.js', 420, 438 ]
+437 silly gunzTarPerm extractEntry .npmignore
+438 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+439 silly gunzTarPerm extractEntry README.md
+440 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+441 silly gunzTarPerm extractEntry package.json
+442 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+443 silly gunzTarPerm extractEntry once.js
+444 silly gunzTarPerm modified mode [ 'once.js', 420, 438 ]
+445 silly gunzTarPerm extractEntry test/once.js
+446 silly gunzTarPerm modified mode [ 'test/once.js', 420, 438 ]
+447 silly gunzTarPerm extractEntry .npmignore
+448 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+449 silly gunzTarPerm extractEntry README.md
+450 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+451 silly gunzTarPerm extractEntry LICENSE
+452 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+453 silly gunzTarPerm extractEntry index.js
+454 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+455 silly gunzTarPerm extractEntry LICENSE
+456 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+457 silly gunzTarPerm extractEntry libusdt-arch.js
+458 silly gunzTarPerm modified mode [ 'libusdt-arch.js', 420, 438 ]
+459 silly gunzTarPerm extractEntry dtrace_provider.cc
+460 silly gunzTarPerm modified mode [ 'dtrace_provider.cc', 420, 438 ]
+461 silly gunzTarPerm extractEntry LICENSE
+462 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+463 silly gunzTarPerm extractEntry index.js
+464 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+465 silly gunzTarPerm extractEntry test.js
+466 silly gunzTarPerm modified mode [ 'test.js', 420, 438 ]
+467 silly gunzTarPerm extractEntry .travis.yml
+468 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+469 silly gunzTarPerm extractEntry package.json
+470 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+471 silly gunzTarPerm extractEntry LICENSE
+472 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+473 silly gunzTarPerm extractEntry jsl.node.conf
+474 silly gunzTarPerm modified mode [ 'jsl.node.conf', 420, 438 ]
+475 silly gunzTarPerm extractEntry duplex.js
+476 silly gunzTarPerm modified mode [ 'duplex.js', 420, 438 ]
+477 silly gunzTarPerm extractEntry transform.js
+478 silly gunzTarPerm modified mode [ 'transform.js', 420, 438 ]
+479 silly gunzTarPerm extractEntry passthrough.js
+480 silly gunzTarPerm modified mode [ 'passthrough.js', 420, 438 ]
+481 silly gunzTarPerm extractEntry .npmignore
+482 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+483 silly gunzTarPerm extractEntry README.md
+484 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+485 silly gunzTarPerm extractEntry docs/backoff.html
+486 silly gunzTarPerm modified mode [ 'docs/backoff.html', 420, 438 ]
+487 silly gunzTarPerm extractEntry Makefile
+488 silly gunzTarPerm modified mode [ 'Makefile', 420, 438 ]
+489 silly gunzTarPerm extractEntry binding.gyp
+490 silly gunzTarPerm modified mode [ 'binding.gyp', 420, 438 ]
+491 silly gunzTarPerm extractEntry src/microtime.cc
+492 silly gunzTarPerm modified mode [ 'src/microtime.cc', 420, 438 ]
+493 silly gunzTarPerm extractEntry compile.py
+494 silly gunzTarPerm modified mode [ 'compile.py', 420, 438 ]
+495 silly gunzTarPerm extractEntry .gitmodules
+496 silly gunzTarPerm modified mode [ '.gitmodules', 420, 438 ]
+497 silly gunzTarPerm extractEntry Makefile
+498 silly gunzTarPerm modified mode [ 'Makefile', 420, 438 ]
+499 silly gunzTarPerm extractEntry .gitmodules
+500 silly gunzTarPerm modified mode [ '.gitmodules', 420, 438 ]
+501 silly gunzTarPerm extractEntry tests/tst.werror.js
+502 silly gunzTarPerm modified mode [ 'tests/tst.werror.js', 420, 438 ]
+503 silly gunzTarPerm extractEntry dtrace_argument.cc
+504 silly gunzTarPerm modified mode [ 'dtrace_argument.cc', 420, 438 ]
+505 silly gunzTarPerm extractEntry dtrace_probe.cc
+506 silly gunzTarPerm modified mode [ 'dtrace_probe.cc', 420, 438 ]
+507 silly gunzTarPerm extractEntry lib/crc.js
+508 silly gunzTarPerm modified mode [ 'lib/crc.js', 420, 438 ]
+509 silly gunzTarPerm extractEntry lib/crcTemp.js
+510 silly gunzTarPerm modified mode [ 'lib/crcTemp.js', 420, 438 ]
+511 silly gunzTarPerm extractEntry test/crc.js
+512 silly gunzTarPerm modified mode [ 'test/crc.js', 493, 511 ]
+513 silly gunzTarPerm extractEntry test/index.html
+514 silly gunzTarPerm modified mode [ 'test/index.html', 420, 438 ]
+515 silly gunzTarPerm extractEntry readable.js
+516 silly gunzTarPerm modified mode [ 'readable.js', 420, 438 ]
+517 silly gunzTarPerm extractEntry docs/docco.css
+518 silly gunzTarPerm modified mode [ 'docs/docco.css', 420, 438 ]
+519 silly gunzTarPerm extractEntry docs/exponential.html
+520 silly gunzTarPerm modified mode [ 'docs/exponential.html', 420, 438 ]
+521 silly gunzTarPerm extractEntry tests/tst.verror.js
+522 silly gunzTarPerm modified mode [ 'tests/tst.verror.js', 420, 438 ]
+523 silly gunzTarPerm extractEntry tests/tst.inherit.js
+524 silly gunzTarPerm modified mode [ 'tests/tst.inherit.js', 420, 438 ]
+525 silly gunzTarPerm extractEntry .gitmodules
+526 silly gunzTarPerm modified mode [ '.gitmodules', 420, 438 ]
+527 silly gunzTarPerm extractEntry dtrace_provider.h
+528 silly gunzTarPerm modified mode [ 'dtrace_provider.h', 420, 438 ]
+529 silly gunzTarPerm extractEntry docs/fibonacci.html
+530 silly gunzTarPerm modified mode [ 'docs/fibonacci.html', 420, 438 ]
+531 silly gunzTarPerm extractEntry docs/function_call.html
+532 silly gunzTarPerm modified mode [ 'docs/function_call.html', 420, 438 ]
+533 info preinstall assert-plus@0.1.5
+534 info preinstall once@1.3.0
+535 silly gunzTarPerm extractEntry libusdt/.npmignore
+536 silly gunzTarPerm modified mode [ 'libusdt/.npmignore', 420, 438 ]
+537 silly gunzTarPerm extractEntry libusdt/README.md
+538 silly gunzTarPerm modified mode [ 'libusdt/README.md', 420, 438 ]
+539 silly install resolved []
+540 verbose about to build C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\assert-plus
+541 info build C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\assert-plus
+542 verbose linkStuff [ false,
+542 verbose linkStuff   false,
+542 verbose linkStuff   false,
+542 verbose linkStuff   'C:\\Users\\Luke\\Documents\\Projects\\tcp_pool\\node_modules\\fast\\node_modules' ]
+543 info linkStuff assert-plus@0.1.5
+544 verbose linkBins assert-plus@0.1.5
+545 verbose linkMans assert-plus@0.1.5
+546 verbose rebuildBundles assert-plus@0.1.5
+547 info install assert-plus@0.1.5
+548 silly install resolved []
+549 verbose about to build C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\once
+550 info build C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\once
+551 verbose linkStuff [ false,
+551 verbose linkStuff   false,
+551 verbose linkStuff   false,
+551 verbose linkStuff   'C:\\Users\\Luke\\Documents\\Projects\\tcp_pool\\node_modules\\fast\\node_modules' ]
+552 info linkStuff once@1.3.0
+553 verbose linkBins once@1.3.0
+554 verbose linkMans once@1.3.0
+555 verbose rebuildBundles once@1.3.0
+556 info install once@1.3.0
+557 info postinstall assert-plus@0.1.5
+558 silly gunzTarPerm extractEntry writable.js
+559 silly gunzTarPerm modified mode [ 'writable.js', 420, 438 ]
+560 silly gunzTarPerm extractEntry float.patch
+561 silly gunzTarPerm modified mode [ 'float.patch', 420, 438 ]
+562 info postinstall once@1.3.0
+563 silly gunzTarPerm extractEntry docs/img/backoff_events.png
+564 silly gunzTarPerm modified mode [ 'docs/img/backoff_events.png', 420, 438 ]
+565 silly gunzTarPerm extractEntry docs/img/function_call_events.png
+566 silly gunzTarPerm modified mode [ 'docs/img/function_call_events.png', 420, 438 ]
+567 verbose unlock done using C:\Users\Luke\AppData\Roaming\npm-cache\_locks\assert-plus-2a2275f04abc0a55.lock for C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\assert-plus
+568 verbose unlock done using C:\Users\Luke\AppData\Roaming\npm-cache\_locks\once-26191be570aa13b3.lock for C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\once
+569 silly gunzTarPerm extractEntry lib/verror.js
+570 silly gunzTarPerm modified mode [ 'lib/verror.js', 420, 438 ]
+571 silly gunzTarPerm extractEntry Makefile.targ
+572 silly gunzTarPerm modified mode [ 'Makefile.targ', 420, 438 ]
+573 silly gunzTarPerm extractEntry lib/_stream_duplex.js
+574 silly gunzTarPerm modified mode [ 'lib/_stream_duplex.js', 420, 438 ]
+575 silly gunzTarPerm extractEntry lib/_stream_passthrough.js
+576 silly gunzTarPerm modified mode [ 'lib/_stream_passthrough.js', 420, 438 ]
+577 silly gunzTarPerm extractEntry libusdt/LICENCE
+578 silly gunzTarPerm modified mode [ 'libusdt/LICENCE', 420, 438 ]
+579 silly gunzTarPerm extractEntry libusdt/usdt_tracepoints_x86_64.s
+580 silly gunzTarPerm modified mode [ 'libusdt/usdt_tracepoints_x86_64.s', 420, 438 ]
+581 silly gunzTarPerm extractEntry examples/levels-werror.js
+582 silly gunzTarPerm modified mode [ 'examples/levels-werror.js', 420, 438 ]
+583 silly gunzTarPerm extractEntry examples/levels-verror.js
+584 silly gunzTarPerm modified mode [ 'examples/levels-verror.js', 420, 438 ]
+585 silly gunzTarPerm extractEntry lib/_stream_readable.js
+586 silly gunzTarPerm modified mode [ 'lib/_stream_readable.js', 420, 438 ]
+587 silly gunzTarPerm extractEntry lib/_stream_transform.js
+588 silly gunzTarPerm modified mode [ 'lib/_stream_transform.js', 420, 438 ]
+589 silly gunzTarPerm extractEntry examples/werror.js
+590 silly gunzTarPerm modified mode [ 'examples/werror.js', 420, 438 ]
+591 silly gunzTarPerm extractEntry examples/varargs.js
+592 silly gunzTarPerm modified mode [ 'examples/varargs.js', 420, 438 ]
+593 silly gunzTarPerm extractEntry docs/img/layers.png
+594 silly gunzTarPerm modified mode [ 'docs/img/layers.png', 420, 438 ]
+595 silly gunzTarPerm extractEntry docs/index.html
+596 silly gunzTarPerm modified mode [ 'docs/index.html', 420, 438 ]
+597 silly gunzTarPerm extractEntry libusdt/test.pl
+598 silly gunzTarPerm modified mode [ 'libusdt/test.pl', 493, 511 ]
+599 silly gunzTarPerm extractEntry libusdt/test_mem_usage.c
+600 silly gunzTarPerm modified mode [ 'libusdt/test_mem_usage.c', 420, 438 ]
+601 silly gunzTarPerm extractEntry lib/_stream_writable.js
+602 silly gunzTarPerm modified mode [ 'lib/_stream_writable.js', 420, 438 ]
+603 info preinstall microtime@1.0.1
+604 silly prepareForInstallMany adding bindings@1.2.1 from microtime dependencies
+605 silly prepareForInstallMany adding nan@1.3.0 from microtime dependencies
+606 silly cache add args [ 'bindings@1.2.1', null ]
+607 verbose cache add spec bindings@1.2.1
+608 silly cache add args [ 'nan@1.3.0', null ]
+609 verbose cache add spec nan@1.3.0
+610 silly cache add parsed spec { raw: 'bindings@1.2.1',
+610 silly cache add   scope: null,
+610 silly cache add   name: 'bindings',
+610 silly cache add   rawSpec: '1.2.1',
+610 silly cache add   spec: '1.2.1',
+610 silly cache add   type: 'version' }
+611 verbose addNamed bindings@1.2.1
+612 silly addNamed semver.valid 1.2.1
+613 silly addNamed semver.validRange 1.2.1
+614 silly mapToRegistry name bindings
+615 silly mapToRegistry using default registry
+616 silly mapToRegistry registry https://registry.npmjs.org/
+617 silly mapToRegistry uri https://registry.npmjs.org/bindings
+618 verbose addNameVersion registry:https://registry.npmjs.org/bindings not in flight; fetching
+619 silly cache add parsed spec { raw: 'nan@1.3.0',
+619 silly cache add   scope: null,
+619 silly cache add   name: 'nan',
+619 silly cache add   rawSpec: '1.3.0',
+619 silly cache add   spec: '1.3.0',
+619 silly cache add   type: 'version' }
+620 verbose addNamed nan@1.3.0
+621 silly addNamed semver.valid 1.3.0
+622 silly addNamed semver.validRange 1.3.0
+623 silly mapToRegistry name nan
+624 silly mapToRegistry using default registry
+625 silly mapToRegistry registry https://registry.npmjs.org/
+626 silly mapToRegistry uri https://registry.npmjs.org/nan
+627 verbose addNameVersion registry:https://registry.npmjs.org/nan not in flight; fetching
+628 silly gunzTarPerm extractEntry libusdt/test_usdt.c
+629 silly gunzTarPerm modified mode [ 'libusdt/test_usdt.c', 420, 438 ]
+630 silly gunzTarPerm extractEntry libusdt/usdt.c
+631 silly gunzTarPerm modified mode [ 'libusdt/usdt.c', 420, 438 ]
+632 silly gunzTarPerm extractEntry examples/verror.js
+633 silly gunzTarPerm modified mode [ 'examples/verror.js', 420, 438 ]
+634 silly gunzTarPerm extractEntry docs/public/fonts/aller-bold.eot
+635 silly gunzTarPerm modified mode [ 'docs/public/fonts/aller-bold.eot', 493, 511 ]
+636 silly gunzTarPerm extractEntry docs/public/fonts/aller-bold.ttf
+637 silly gunzTarPerm modified mode [ 'docs/public/fonts/aller-bold.ttf', 493, 511 ]
+638 silly gunzTarPerm extractEntry libusdt/Makefile
+639 silly gunzTarPerm modified mode [ 'libusdt/Makefile', 420, 438 ]
+640 silly gunzTarPerm extractEntry libusdt/usdt_dof.c
+641 silly gunzTarPerm modified mode [ 'libusdt/usdt_dof.c', 420, 438 ]
+642 silly gunzTarPerm extractEntry libusdt/usdt_dof_file.c
+643 silly gunzTarPerm modified mode [ 'libusdt/usdt_dof_file.c', 420, 438 ]
+644 silly gunzTarPerm extractEntry libusdt/usdt_dof_sections.c
+645 silly gunzTarPerm modified mode [ 'libusdt/usdt_dof_sections.c', 420, 438 ]
+646 verbose request uri https://registry.npmjs.org/bindings
+647 verbose request no auth needed
+648 info attempt registry request try #1 at 12:51:57 PM
+649 verbose etag "5997G8NY1OJEMZ1HNHL7VBX5J"
+650 http request GET https://registry.npmjs.org/bindings
+651 silly gunzTarPerm extractEntry docs/public/fonts/aller-bold.woff
+652 silly gunzTarPerm modified mode [ 'docs/public/fonts/aller-bold.woff', 493, 511 ]
+653 silly gunzTarPerm extractEntry docs/public/fonts/aller-light.eot
+654 silly gunzTarPerm modified mode [ 'docs/public/fonts/aller-light.eot', 493, 511 ]
+655 silly gunzTarPerm extractEntry libusdt/usdt_internal.h
+656 silly gunzTarPerm modified mode [ 'libusdt/usdt_internal.h', 420, 438 ]
+657 silly gunzTarPerm extractEntry libusdt/usdt_probe.c
+658 silly gunzTarPerm modified mode [ 'libusdt/usdt_probe.c', 420, 438 ]
+659 silly gunzTarPerm extractEntry docs/public/fonts/aller-light.ttf
+660 silly gunzTarPerm modified mode [ 'docs/public/fonts/aller-light.ttf', 493, 511 ]
+661 verbose request uri https://registry.npmjs.org/nan
+662 verbose request no auth needed
+663 info attempt registry request try #1 at 12:51:57 PM
+664 verbose etag "2RVNOBUBIPFCFHXKKPTSTKGB8"
+665 http request GET https://registry.npmjs.org/nan
+666 silly gunzTarPerm extractEntry libusdt/usdt_tracepoints_i386.s
+667 silly gunzTarPerm modified mode [ 'libusdt/usdt_tracepoints_i386.s', 420, 438 ]
+668 silly gunzTarPerm extractEntry libusdt/usdt.h
+669 silly gunzTarPerm modified mode [ 'libusdt/usdt.h', 420, 438 ]
+670 silly gunzTarPerm extractEntry docs/public/fonts/aller-light.woff
+671 silly gunzTarPerm modified mode [ 'docs/public/fonts/aller-light.woff', 493, 511 ]
+672 silly gunzTarPerm extractEntry CHANGES.md
+673 silly gunzTarPerm modified mode [ 'CHANGES.md', 420, 438 ]
+674 silly gunzTarPerm extractEntry libusdt-build.sh
+675 silly gunzTarPerm modified mode [ 'libusdt-build.sh', 493, 511 ]
+676 silly gunzTarPerm extractEntry docs/public/fonts/novecento-bold.eot
+677 silly gunzTarPerm modified mode [ 'docs/public/fonts/novecento-bold.eot', 493, 511 ]
+678 silly gunzTarPerm extractEntry docs/public/fonts/novecento-bold.ttf
+679 silly gunzTarPerm modified mode [ 'docs/public/fonts/novecento-bold.ttf', 493, 511 ]
+680 silly gunzTarPerm extractEntry test/32probe-char.test.js
+681 silly gunzTarPerm modified mode [ 'test/32probe-char.test.js', 420, 438 ]
+682 silly gunzTarPerm extractEntry test/enabled-disabled.test.js
+683 silly gunzTarPerm modified mode [ 'test/enabled-disabled.test.js', 420, 438 ]
+684 silly gunzTarPerm extractEntry docs/public/fonts/novecento-bold.woff
+685 silly gunzTarPerm modified mode [ 'docs/public/fonts/novecento-bold.woff', 493, 511 ]
+686 silly gunzTarPerm extractEntry docs/public/stylesheets/normalize.css
+687 silly gunzTarPerm modified mode [ 'docs/public/stylesheets/normalize.css', 420, 438 ]
+688 silly gunzTarPerm extractEntry test/enabled-disabled_fire.js
+689 silly gunzTarPerm modified mode [ 'test/enabled-disabled_fire.js', 420, 438 ]
+690 silly gunzTarPerm extractEntry test/enabledagain.test.js
+691 silly gunzTarPerm modified mode [ 'test/enabledagain.test.js', 420, 438 ]
+692 info preinstall crc@0.2.1
+693 silly install resolved []
+694 verbose about to build C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\crc
+695 info build C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\crc
+696 verbose linkStuff [ false,
+696 verbose linkStuff   false,
+696 verbose linkStuff   false,
+696 verbose linkStuff   'C:\\Users\\Luke\\Documents\\Projects\\tcp_pool\\node_modules\\fast\\node_modules' ]
+697 info linkStuff crc@0.2.1
+698 verbose linkBins crc@0.2.1
+699 verbose linkMans crc@0.2.1
+700 verbose rebuildBundles crc@0.2.1
+701 info install crc@0.2.1
+702 info postinstall crc@0.2.1
+703 verbose unlock done using C:\Users\Luke\AppData\Roaming\npm-cache\_locks\crc-663033bcd4fc5e40.lock for C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\crc
+704 silly gunzTarPerm extractEntry test/dtrace-test.js
+705 silly gunzTarPerm modified mode [ 'test/dtrace-test.js', 420, 438 ]
+706 silly gunzTarPerm extractEntry test/fewer-args-json.test.js
+707 silly gunzTarPerm modified mode [ 'test/fewer-args-json.test.js', 420, 438 ]
+708 silly gunzTarPerm extractEntry docs/strategy.html
+709 silly gunzTarPerm modified mode [ 'docs/strategy.html', 420, 438 ]
+710 silly gunzTarPerm extractEntry CHANGES.md
+711 silly gunzTarPerm modified mode [ 'CHANGES.md', 420, 438 ]
+712 silly gunzTarPerm extractEntry test/fewer-args-json_fire.js
+713 silly gunzTarPerm modified mode [ 'test/fewer-args-json_fire.js', 420, 438 ]
+714 silly gunzTarPerm extractEntry test/fewer-args.test.js
+715 silly gunzTarPerm modified mode [ 'test/fewer-args.test.js', 420, 438 ]
+716 silly gunzTarPerm extractEntry examples/exponential.js
+717 silly gunzTarPerm modified mode [ 'examples/exponential.js', 493, 511 ]
+718 silly gunzTarPerm extractEntry examples/exponential_strategy.js
+719 silly gunzTarPerm modified mode [ 'examples/exponential_strategy.js', 493, 511 ]
+720 silly gunzTarPerm extractEntry test/fewer-args_fire.js
+721 silly gunzTarPerm modified mode [ 'test/fewer-args_fire.js', 420, 438 ]
+722 silly gunzTarPerm extractEntry test/gc.js
+723 silly gunzTarPerm modified mode [ 'test/gc.js', 420, 438 ]
+724 silly gunzTarPerm extractEntry examples/fail.js
+725 silly gunzTarPerm modified mode [ 'examples/fail.js', 493, 511 ]
+726 silly gunzTarPerm extractEntry examples/fibonacci.js
+727 silly gunzTarPerm modified mode [ 'examples/fibonacci.js', 493, 511 ]
+728 silly gunzTarPerm extractEntry examples/fibonacci_strategy.js
+729 silly gunzTarPerm modified mode [ 'examples/fibonacci_strategy.js', 493, 511 ]
+730 silly gunzTarPerm extractEntry examples/function_call.js
+731 silly gunzTarPerm modified mode [ 'examples/function_call.js', 493, 511 ]
+732 silly gunzTarPerm extractEntry test/disambiguation_fire.js
+733 silly gunzTarPerm modified mode [ 'test/disambiguation_fire.js', 420, 438 ]
+734 silly gunzTarPerm extractEntry test/gc.test.js
+735 silly gunzTarPerm modified mode [ 'test/gc.test.js', 420, 438 ]
+736 silly gunzTarPerm extractEntry test/disambiguation.test.js
+737 silly gunzTarPerm modified mode [ 'test/disambiguation.test.js', 420, 438 ]
+738 silly gunzTarPerm extractEntry test/gc2.js
+739 silly gunzTarPerm modified mode [ 'test/gc2.js', 420, 438 ]
+740 info preinstall verror@1.3.6
+741 silly prepareForInstallMany adding extsprintf@1.0.2 from verror dependencies
+742 silly cache add args [ 'extsprintf@1.0.2', null ]
+743 verbose cache add spec extsprintf@1.0.2
+744 silly cache add parsed spec { raw: 'extsprintf@1.0.2',
+744 silly cache add   scope: null,
+744 silly cache add   name: 'extsprintf',
+744 silly cache add   rawSpec: '1.0.2',
+744 silly cache add   spec: '1.0.2',
+744 silly cache add   type: 'version' }
+745 verbose addNamed extsprintf@1.0.2
+746 silly addNamed semver.valid 1.0.2
+747 silly addNamed semver.validRange 1.0.2
+748 silly mapToRegistry name extsprintf
+749 silly mapToRegistry using default registry
+750 silly mapToRegistry registry https://registry.npmjs.org/
+751 silly mapToRegistry uri https://registry.npmjs.org/extsprintf
+752 verbose addNameVersion registry:https://registry.npmjs.org/extsprintf not in flight; fetching
+753 silly gunzTarPerm extractEntry test/create-destroy_fire.js
+754 silly gunzTarPerm modified mode [ 'test/create-destroy_fire.js', 420, 438 ]
+755 silly gunzTarPerm extractEntry test/gc3.js
+756 silly gunzTarPerm modified mode [ 'test/gc3.js', 420, 438 ]
+757 silly gunzTarPerm extractEntry examples/randomized.js
+758 silly gunzTarPerm modified mode [ 'examples/randomized.js', 493, 511 ]
+759 silly gunzTarPerm extractEntry examples/readme.js
+760 silly gunzTarPerm modified mode [ 'examples/readme.js', 493, 511 ]
+761 silly gunzTarPerm extractEntry examples/reset.js
+762 silly gunzTarPerm modified mode [ 'examples/reset.js', 493, 511 ]
+763 silly gunzTarPerm extractEntry .jshintrc
+764 silly gunzTarPerm modified mode [ '.jshintrc', 420, 438 ]
+765 verbose request uri https://registry.npmjs.org/extsprintf
+766 verbose request no auth needed
+767 info attempt registry request try #1 at 12:51:57 PM
+768 verbose etag "8SZHSWXY2AGI2KX70GQFVOSWW"
+769 http request GET https://registry.npmjs.org/extsprintf
+770 silly gunzTarPerm extractEntry test/create-destroy.test.js
+771 silly gunzTarPerm modified mode [ 'test/create-destroy.test.js', 420, 438 ]
+772 silly gunzTarPerm extractEntry test/gc_fire.js
+773 silly gunzTarPerm modified mode [ 'test/gc_fire.js', 420, 438 ]
+774 silly gunzTarPerm extractEntry lib/backoff.js
+775 silly gunzTarPerm modified mode [ 'lib/backoff.js', 420, 438 ]
+776 silly gunzTarPerm extractEntry lib/function_call.js
+777 silly gunzTarPerm modified mode [ 'lib/function_call.js', 420, 438 ]
+778 silly gunzTarPerm extractEntry lib/strategy/exponential.js
+779 silly gunzTarPerm modified mode [ 'lib/strategy/exponential.js', 420, 438 ]
+780 silly gunzTarPerm extractEntry test/basic_fire.js
+781 silly gunzTarPerm modified mode [ 'test/basic_fire.js', 420, 438 ]
+782 silly gunzTarPerm extractEntry test/json-args.test.js
+783 silly gunzTarPerm modified mode [ 'test/json-args.test.js', 420, 438 ]
+784 info preinstall readable-stream@1.1.10
+785 silly prepareForInstallMany adding core-util-is@~1.0.0 from readable-stream dependencies
+786 silly prepareForInstallMany adding string_decoder@~0.10.x from readable-stream dependencies
+787 silly prepareForInstallMany adding debuglog@0.0.2 from readable-stream dependencies
+788 silly gunzTarPerm extractEntry lib/strategy/fibonacci.js
+789 silly gunzTarPerm modified mode [ 'lib/strategy/fibonacci.js', 420, 438 ]
+790 silly gunzTarPerm extractEntry lib/strategy/strategy.js
+791 silly gunzTarPerm modified mode [ 'lib/strategy/strategy.js', 420, 438 ]
+792 silly gunzTarPerm extractEntry .travis.yml
+793 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+794 silly cache add args [ 'core-util-is@~1.0.0', null ]
+795 verbose cache add spec core-util-is@~1.0.0
+796 silly cache add args [ 'string_decoder@~0.10.x', null ]
+797 verbose cache add spec string_decoder@~0.10.x
+798 silly cache add parsed spec { raw: 'core-util-is@~1.0.0',
+798 silly cache add   scope: null,
+798 silly cache add   name: 'core-util-is',
+798 silly cache add   rawSpec: '~1.0.0',
+798 silly cache add   spec: '>=1.0.0 <1.1.0',
+798 silly cache add   type: 'range' }
+799 verbose addNamed core-util-is@>=1.0.0 <1.1.0
+800 silly addNamed semver.valid null
+801 silly addNamed semver.validRange >=1.0.0 <1.1.0
+802 silly addNameRange { name: 'core-util-is', range: '>=1.0.0 <1.1.0', hasData: false }
+803 silly mapToRegistry name core-util-is
+804 silly mapToRegistry using default registry
+805 silly mapToRegistry registry https://registry.npmjs.org/
+806 silly mapToRegistry uri https://registry.npmjs.org/core-util-is
+807 verbose addNameRange registry:https://registry.npmjs.org/core-util-is not in flight; fetching
+808 silly cache add parsed spec { raw: 'string_decoder@~0.10.x',
+808 silly cache add   scope: null,
+808 silly cache add   name: 'string_decoder',
+808 silly cache add   rawSpec: '~0.10.x',
+808 silly cache add   spec: '>=0.10.0 <0.11.0',
+808 silly cache add   type: 'range' }
+809 verbose addNamed string_decoder@>=0.10.0 <0.11.0
+810 silly addNamed semver.valid null
+811 silly addNamed semver.validRange >=0.10.0 <0.11.0
+812 silly addNameRange { name: 'string_decoder',
+812 silly addNameRange   range: '>=0.10.0 <0.11.0',
+812 silly addNameRange   hasData: false }
+813 silly mapToRegistry name string_decoder
+814 silly mapToRegistry using default registry
+815 silly mapToRegistry registry https://registry.npmjs.org/
+816 silly mapToRegistry uri https://registry.npmjs.org/string_decoder
+817 verbose addNameRange registry:https://registry.npmjs.org/string_decoder not in flight; fetching
+818 silly cache add args [ 'debuglog@0.0.2', null ]
+819 verbose cache add spec debuglog@0.0.2
+820 silly cache add parsed spec { raw: 'debuglog@0.0.2',
+820 silly cache add   scope: null,
+820 silly cache add   name: 'debuglog',
+820 silly cache add   rawSpec: '0.0.2',
+820 silly cache add   spec: '0.0.2',
+820 silly cache add   type: 'version' }
+821 verbose addNamed debuglog@0.0.2
+822 silly addNamed semver.valid 0.0.2
+823 silly addNamed semver.validRange 0.0.2
+824 silly mapToRegistry name debuglog
+825 silly mapToRegistry using default registry
+826 silly mapToRegistry registry https://registry.npmjs.org/
+827 silly mapToRegistry uri https://registry.npmjs.org/debuglog
+828 verbose addNameVersion registry:https://registry.npmjs.org/debuglog not in flight; fetching
+829 silly gunzTarPerm extractEntry test/basic.test.js
+830 silly gunzTarPerm modified mode [ 'test/basic.test.js', 420, 438 ]
+831 silly gunzTarPerm extractEntry test/json-args_fire.js
+832 silly gunzTarPerm modified mode [ 'test/json-args_fire.js', 420, 438 ]
+833 silly gunzTarPerm extractEntry test/add-probes_fire.js
+834 silly gunzTarPerm modified mode [ 'test/add-probes_fire.js', 420, 438 ]
+835 silly gunzTarPerm extractEntry test/more-args.test.js
+836 silly gunzTarPerm modified mode [ 'test/more-args.test.js', 420, 438 ]
+837 silly gunzTarPerm extractEntry test/add-probes.test.js
+838 silly gunzTarPerm modified mode [ 'test/add-probes.test.js', 420, 438 ]
+839 silly gunzTarPerm extractEntry test/more-args_fire.js
+840 silly gunzTarPerm modified mode [ 'test/more-args_fire.js', 420, 438 ]
+841 silly gunzTarPerm extractEntry tests/api.js
+842 silly gunzTarPerm modified mode [ 'tests/api.js', 420, 438 ]
+843 verbose request uri https://registry.npmjs.org/debuglog
+844 verbose request no auth needed
+845 info attempt registry request try #1 at 12:51:57 PM
+846 verbose etag "ECCIBGR09FT15MUM053ZLL9V8"
+847 http request GET https://registry.npmjs.org/debuglog
+848 silly gunzTarPerm extractEntry test/32probe_fire.js
+849 silly gunzTarPerm modified mode [ 'test/32probe_fire.js', 420, 438 ]
+850 silly gunzTarPerm extractEntry test/multiple-json-args.test.js
+851 silly gunzTarPerm modified mode [ 'test/multiple-json-args.test.js', 420, 438 ]
+852 verbose request uri https://registry.npmjs.org/core-util-is
+853 verbose request no auth needed
+854 info attempt registry request try #1 at 12:51:57 PM
+855 verbose etag "8N932ER6J79FE9PNV7H41QYLJ"
+856 http request GET https://registry.npmjs.org/core-util-is
+857 silly gunzTarPerm extractEntry test/32probe.test.js
+858 silly gunzTarPerm modified mode [ 'test/32probe.test.js', 420, 438 ]
+859 silly gunzTarPerm extractEntry test/multiple-json-args_fire.js
+860 silly gunzTarPerm modified mode [ 'test/multiple-json-args_fire.js', 420, 438 ]
+861 verbose request uri https://registry.npmjs.org/string_decoder
+862 verbose request no auth needed
+863 info attempt registry request try #1 at 12:51:57 PM
+864 verbose etag "89NG6AVWTXZBFGLGXXUONULF1"
+865 http request GET https://registry.npmjs.org/string_decoder
+866 silly gunzTarPerm extractEntry tests/backoff.js
+867 silly gunzTarPerm modified mode [ 'tests/backoff.js', 420, 438 ]
+868 silly gunzTarPerm extractEntry tests/backoff_strategy.js
+869 silly gunzTarPerm modified mode [ 'tests/backoff_strategy.js', 420, 438 ]
+870 silly gunzTarPerm extractEntry tests/exponential_backoff_strategy.js
+871 silly gunzTarPerm modified mode [ 'tests/exponential_backoff_strategy.js', 420, 438 ]
+872 silly gunzTarPerm extractEntry test/32probe-char_fire.js
+873 silly gunzTarPerm modified mode [ 'test/32probe-char_fire.js', 420, 438 ]
+874 silly gunzTarPerm extractEntry test/notenabled.test.js
+875 silly gunzTarPerm modified mode [ 'test/notenabled.test.js', 420, 438 ]
+876 http 304 https://registry.npmjs.org/bindings
+877 silly get cb [ 304,
+877 silly get   { date: 'Wed, 15 Apr 2015 16:52:01 GMT',
+877 silly get     server: 'Apache',
+877 silly get     via: '1.1 varnish',
+877 silly get     'last-modified': 'Wed, 15 Apr 2015 16:52:01 GMT',
+877 silly get     'cache-control': 'max-age=60',
+877 silly get     etag: '"5997G8NY1OJEMZ1HNHL7VBX5J"',
+877 silly get     age: '8',
+877 silly get     'x-served-by': 'cache-atl6222-ATL',
+877 silly get     'x-cache': 'HIT',
+877 silly get     'x-cache-hits': '1',
+877 silly get     'x-timer': 'S1429116721.815561,VS0,VE0',
+877 silly get     vary: 'Accept',
+877 silly get     'content-length': '0',
+877 silly get     'keep-alive': 'timeout=10, max=50',
+877 silly get     connection: 'Keep-Alive' } ]
+878 verbose etag https://registry.npmjs.org/bindings from cache
+879 verbose get saving bindings to C:\Users\Luke\AppData\Roaming\npm-cache\registry.npmjs.org\bindings\.cache.json
+880 silly gunzTarPerm extractEntry tests/fibonacci_backoff_strategy.js
+881 silly gunzTarPerm modified mode [ 'tests/fibonacci_backoff_strategy.js', 420, 438 ]
+882 http 304 https://registry.npmjs.org/nan
+883 silly get cb [ 304,
+883 silly get   { date: 'Wed, 15 Apr 2015 16:52:01 GMT',
+883 silly get     server: 'Apache',
+883 silly get     via: '1.1 varnish',
+883 silly get     'last-modified': 'Wed, 15 Apr 2015 16:51:19 GMT',
+883 silly get     'cache-control': 'max-age=60',
+883 silly get     etag: '"2RVNOBUBIPFCFHXKKPTSTKGB8"',
+883 silly get     age: '53',
+883 silly get     'x-served-by': 'cache-atl6220-ATL',
+883 silly get     'x-cache': 'HIT',
+883 silly get     'x-cache-hits': '4',
+883 silly get     'x-timer': 'S1429116721.819484,VS0,VE0',
+883 silly get     vary: 'Accept',
+883 silly get     'content-length': '0',
+883 silly get     'keep-alive': 'timeout=10, max=50',
+883 silly get     connection: 'Keep-Alive' } ]
+884 verbose etag https://registry.npmjs.org/nan from cache
+885 verbose get saving nan to C:\Users\Luke\AppData\Roaming\npm-cache\registry.npmjs.org\nan\.cache.json
+886 silly gunzTarPerm extractEntry test/enabledagain_fire.js
+887 silly gunzTarPerm modified mode [ 'test/enabledagain_fire.js', 420, 438 ]
+888 silly gunzTarPerm extractEntry TODO.md
+889 silly gunzTarPerm modified mode [ 'TODO.md', 420, 438 ]
+890 silly gunzTarPerm extractEntry package.json.rej
+891 silly gunzTarPerm modified mode [ 'package.json.rej', 420, 438 ]
+892 silly gunzTarPerm extractEntry scripts/install.js
+893 silly gunzTarPerm modified mode [ 'scripts/install.js', 493, 511 ]
+894 silly gunzTarPerm extractEntry wscript
+895 silly gunzTarPerm modified mode [ 'wscript', 420, 438 ]
+896 silly gunzTarPerm extractEntry tests/function_call.js
+897 silly gunzTarPerm modified mode [ 'tests/function_call.js', 420, 438 ]
+898 silly cache afterAdd bindings@1.2.1
+899 verbose afterAdd C:\Users\Luke\AppData\Roaming\npm-cache\bindings\1.2.1\package\package.json not in flight; writing
+900 verbose afterAdd C:\Users\Luke\AppData\Roaming\npm-cache\bindings\1.2.1\package\package.json written
+901 silly cache afterAdd nan@1.3.0
+902 verbose afterAdd C:\Users\Luke\AppData\Roaming\npm-cache\nan\1.3.0\package\package.json not in flight; writing
+903 verbose afterAdd C:\Users\Luke\AppData\Roaming\npm-cache\nan\1.3.0\package\package.json written
+904 silly install resolved [ { name: 'bindings',
+904 silly install resolved     description: 'Helper module for loading your native module\'s .node file',
+904 silly install resolved     keywords: [ 'native', 'addon', 'bindings', 'gyp', 'waf', 'c', 'c++' ],
+904 silly install resolved     version: '1.2.1',
+904 silly install resolved     author:
+904 silly install resolved      { name: 'Nathan Rajlich',
+904 silly install resolved        email: 'nathan@tootallnate.net',
+904 silly install resolved        url: 'http://tootallnate.net' },
+904 silly install resolved     repository:
+904 silly install resolved      { type: 'git',
+904 silly install resolved        url: 'git://github.com/TooTallNate/node-bindings.git' },
+904 silly install resolved     main: './bindings.js',
+904 silly install resolved     bugs: { url: 'https://github.com/TooTallNate/node-bindings/issues' },
+904 silly install resolved     homepage: 'https://github.com/TooTallNate/node-bindings',
+904 silly install resolved     license: 'MIT',
+904 silly install resolved     gitHead: 'e404152ee27f8478ccbc7122ee051246e8e5ec02',
+904 silly install resolved     _id: 'bindings@1.2.1',
+904 silly install resolved     scripts: {},
+904 silly install resolved     _shasum: '14ad6113812d2d37d72e67b4cacb4bb726505f11',
+904 silly install resolved     _from: 'bindings@1.2.1',
+904 silly install resolved     _npmVersion: '1.4.14',
+904 silly install resolved     _npmUser: { name: 'tootallnate', email: 'nathan@tootallnate.net' },
+904 silly install resolved     maintainers: [ [Object], [Object] ],
+904 silly install resolved     dist:
+904 silly install resolved      { shasum: '14ad6113812d2d37d72e67b4cacb4bb726505f11',
+904 silly install resolved        tarball: 'http://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz' },
+904 silly install resolved     directories: {},
+904 silly install resolved     _resolved: 'https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz',
+904 silly install resolved     readme: 'ERROR: No README data found!' },
+904 silly install resolved   { name: 'nan',
+904 silly install resolved     version: '1.3.0',
+904 silly install resolved     description: 'Native Abstractions for Node.js: C++ header for Node 0.8->0.12 compatibility',
+904 silly install resolved     main: 'include_dirs.js',
+904 silly install resolved     repository: { type: 'git', url: 'git://github.com/rvagg/nan.git' },
+904 silly install resolved     scripts:
+904 silly install resolved      { test: 'tap --gc test/js/*-test.js',
+904 silly install resolved        'rebuild-tests': 'node-gyp rebuild --directory test' },
+904 silly install resolved     contributors: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+904 silly install resolved     devDependencies:
+904 silly install resolved      { bindings: '~1.2.1',
+904 silly install resolved        'node-gyp': '~1.0.1',
+904 silly install resolved        tap: '~0.4.12',
+904 silly install resolved        xtend: '~4.0.0' },
+904 silly install resolved     license: 'MIT',
+904 silly install resolved     gitHead: 'e482fbe142e58373d5a24f4e5a60c61e22a13f83',
+904 silly install resolved     bugs: { url: 'https://github.com/rvagg/nan/issues' },
+904 silly install resolved     homepage: 'https://github.com/rvagg/nan',
+904 silly install resolved     _id: 'nan@1.3.0',
+904 silly install resolved     _shasum: '9a5b8d5ef97a10df3050e59b2c362d3baf779742',
+904 silly install resolved     _from: 'nan@1.3.0',
+904 silly install resolved     _npmVersion: '1.4.21',
+904 silly install resolved     _npmUser: { name: 'rvagg', email: 'rod@vagg.org' },
+904 silly install resolved     maintainers: [ [Object] ],
+904 silly install resolved     dist:
+904 silly install resolved      { shasum: '9a5b8d5ef97a10df3050e59b2c362d3baf779742',
+904 silly install resolved        tarball: 'http://registry.npmjs.org/nan/-/nan-1.3.0.tgz' },
+904 silly install resolved     directories: {},
+904 silly install resolved     _resolved: 'https://registry.npmjs.org/nan/-/nan-1.3.0.tgz',
+904 silly install resolved     readme: 'ERROR: No README data found!' } ]
+905 info install bindings@1.2.1 into C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\microtime
+906 info install nan@1.3.0 into C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\microtime
+907 info installOne bindings@1.2.1
+908 verbose installOne of bindings to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\microtime not in flight; installing
+909 info installOne nan@1.3.0
+910 verbose installOne of nan to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\microtime not in flight; installing
+911 verbose lock using C:\Users\Luke\AppData\Roaming\npm-cache\_locks\nan-4d7f4e6eaca26379.lock for C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\microtime\node_modules\nan
+912 verbose lock using C:\Users\Luke\AppData\Roaming\npm-cache\_locks\bindings-5bace4d3efb3cd36.lock for C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\microtime\node_modules\bindings
+913 silly install write writing nan 1.3.0 to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\microtime\node_modules\nan
+914 silly cache addNamed cb nan@1.3.0
+915 verbose unbuild node_modules\fast\node_modules\microtime\node_modules\nan
+916 silly install write writing bindings 1.2.1 to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\microtime\node_modules\bindings
+917 silly cache addNamed cb bindings@1.2.1
+918 verbose unbuild node_modules\fast\node_modules\microtime\node_modules\bindings
+919 verbose gentlyRm vacuuming C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\microtime\node_modules\nan
+920 verbose gentlyRm vacuuming C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\microtime\node_modules\bindings
+921 verbose tar unpack C:\Users\Luke\AppData\Roaming\npm-cache\nan\1.3.0\package.tgz
+922 verbose tar unpacking to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\microtime\node_modules\nan
+923 verbose gentlyRm vacuuming C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\microtime\node_modules\nan
+924 verbose tar unpack C:\Users\Luke\AppData\Roaming\npm-cache\bindings\1.2.1\package.tgz
+925 verbose tar unpacking to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\microtime\node_modules\bindings
+926 verbose gentlyRm vacuuming C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\microtime\node_modules\bindings
+927 silly gunzTarPerm modes [ '777', '666' ]
+928 silly gunzTarPerm modes [ '777', '666' ]
+929 silly gunzTarPerm extractEntry package.json
+930 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+931 silly gunzTarPerm extractEntry README.md
+932 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+933 silly gunzTarPerm extractEntry bindings.js
+934 silly gunzTarPerm modified mode [ 'bindings.js', 420, 438 ]
+935 silly gunzTarPerm extractEntry package.json
+936 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
+937 silly gunzTarPerm extractEntry README.md
+938 silly gunzTarPerm modified mode [ 'README.md', 436, 438 ]
+939 silly gunzTarPerm extractEntry LICENSE
+940 silly gunzTarPerm modified mode [ 'LICENSE', 436, 438 ]
+941 silly gunzTarPerm extractEntry include_dirs.js
+942 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 438 ]
+943 silly gunzTarPerm extractEntry CHANGELOG.md
+944 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 438 ]
+945 silly gunzTarPerm extractEntry .dntrc
+946 silly gunzTarPerm modified mode [ '.dntrc', 436, 438 ]
+947 silly gunzTarPerm extractEntry nan.h
+948 silly gunzTarPerm modified mode [ 'nan.h', 436, 438 ]
+949 silly gunzTarPerm extractEntry appveyor.yml
+950 silly gunzTarPerm modified mode [ 'appveyor.yml', 436, 438 ]
+951 info preinstall bindings@1.2.1
+952 silly install resolved []
+953 verbose about to build C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\microtime\node_modules\bindings
+954 info build C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\microtime\node_modules\bindings
+955 verbose linkStuff [ false,
+955 verbose linkStuff   false,
+955 verbose linkStuff   false,
+955 verbose linkStuff   'C:\\Users\\Luke\\Documents\\Projects\\tcp_pool\\node_modules\\fast\\node_modules\\microtime\\node_modules' ]
+956 info linkStuff bindings@1.2.1
+957 verbose linkBins bindings@1.2.1
+958 verbose linkMans bindings@1.2.1
+959 verbose rebuildBundles bindings@1.2.1
+960 info install bindings@1.2.1
+961 info postinstall bindings@1.2.1
+962 verbose unlock done using C:\Users\Luke\AppData\Roaming\npm-cache\_locks\bindings-5bace4d3efb3cd36.lock for C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\microtime\node_modules\bindings
+963 http 304 https://registry.npmjs.org/extsprintf
+964 silly get cb [ 304,
+964 silly get   { date: 'Wed, 15 Apr 2015 16:52:01 GMT',
+964 silly get     server: 'Apache',
+964 silly get     via: '1.1 varnish',
+964 silly get     'last-modified': 'Wed, 15 Apr 2015 16:52:01 GMT',
+964 silly get     'cache-control': 'max-age=60',
+964 silly get     etag: '"8SZHSWXY2AGI2KX70GQFVOSWW"',
+964 silly get     age: '55',
+964 silly get     'x-served-by': 'cache-atl6221-ATL',
+964 silly get     'x-cache': 'HIT',
+964 silly get     'x-cache-hits': '1',
+964 silly get     'x-timer': 'S1429116721.952668,VS0,VE1',
+964 silly get     vary: 'Accept',
+964 silly get     'content-length': '0',
+964 silly get     'keep-alive': 'timeout=10, max=50',
+964 silly get     connection: 'Keep-Alive' } ]
+965 verbose etag https://registry.npmjs.org/extsprintf from cache
+966 verbose get saving extsprintf to C:\Users\Luke\AppData\Roaming\npm-cache\registry.npmjs.org\extsprintf\.cache.json
+967 http 304 https://registry.npmjs.org/debuglog
+968 silly get cb [ 304,
+968 silly get   { date: 'Wed, 15 Apr 2015 16:52:01 GMT',
+968 silly get     server: 'Apache',
+968 silly get     via: '1.1 varnish',
+968 silly get     'last-modified': 'Wed, 15 Apr 2015 16:51:57 GMT',
+968 silly get     'cache-control': 'max-age=60',
+968 silly get     etag: '"ECCIBGR09FT15MUM053ZLL9V8"',
+968 silly get     age: '38',
+968 silly get     'x-served-by': 'cache-atl6224-ATL',
+968 silly get     'x-cache': 'HIT',
+968 silly get     'x-cache-hits': '2',
+968 silly get     'x-timer': 'S1429116721.963194,VS0,VE0',
+968 silly get     vary: 'Accept',
+968 silly get     'content-length': '0',
+968 silly get     'keep-alive': 'timeout=10, max=50',
+968 silly get     connection: 'Keep-Alive' } ]
+969 verbose etag https://registry.npmjs.org/debuglog from cache
+970 verbose get saving debuglog to C:\Users\Luke\AppData\Roaming\npm-cache\registry.npmjs.org\debuglog\.cache.json
+971 http 304 https://registry.npmjs.org/core-util-is
+972 silly get cb [ 304,
+972 silly get   { date: 'Wed, 15 Apr 2015 16:52:01 GMT',
+972 silly get     server: 'Apache',
+972 silly get     via: '1.1 varnish',
+972 silly get     'last-modified': 'Wed, 15 Apr 2015 16:51:42 GMT',
+972 silly get     'cache-control': 'max-age=60',
+972 silly get     etag: '"8N932ER6J79FE9PNV7H41QYLJ"',
+972 silly get     age: '32',
+972 silly get     'x-served-by': 'cache-atl6231-ATL',
+972 silly get     'x-cache': 'HIT',
+972 silly get     'x-cache-hits': '5',
+972 silly get     'x-timer': 'S1429116721.970396,VS0,VE0',
+972 silly get     vary: 'Accept',
+972 silly get     'content-length': '0',
+972 silly get     'keep-alive': 'timeout=10, max=50',
+972 silly get     connection: 'Keep-Alive' } ]
+973 verbose etag https://registry.npmjs.org/core-util-is from cache
+974 verbose get saving core-util-is to C:\Users\Luke\AppData\Roaming\npm-cache\registry.npmjs.org\core-util-is\.cache.json
+975 http 304 https://registry.npmjs.org/string_decoder
+976 silly get cb [ 304,
+976 silly get   { date: 'Wed, 15 Apr 2015 16:52:01 GMT',
+976 silly get     server: 'Apache',
+976 silly get     via: '1.1 varnish',
+976 silly get     'last-modified': 'Wed, 15 Apr 2015 16:51:50 GMT',
+976 silly get     'cache-control': 'max-age=60',
+976 silly get     etag: '"89NG6AVWTXZBFGLGXXUONULF1"',
+976 silly get     age: '27',
+976 silly get     'x-served-by': 'cache-atl6228-ATL',
+976 silly get     'x-cache': 'HIT',
+976 silly get     'x-cache-hits': '2',
+976 silly get     'x-timer': 'S1429116721.976623,VS0,VE0',
+976 silly get     vary: 'Accept',
+976 silly get     'content-length': '0',
+976 silly get     'keep-alive': 'timeout=10, max=50',
+976 silly get     connection: 'Keep-Alive' } ]
+977 verbose etag https://registry.npmjs.org/string_decoder from cache
+978 verbose get saving string_decoder to C:\Users\Luke\AppData\Roaming\npm-cache\registry.npmjs.org\string_decoder\.cache.json
+979 silly addNameRange number 2 { name: 'core-util-is', range: '>=1.0.0 <1.1.0', hasData: true }
+980 silly addNameRange versions [ 'core-util-is', [ '1.0.0', '1.0.1' ] ]
+981 verbose addNamed core-util-is@1.0.1
+982 silly addNamed semver.valid 1.0.1
+983 silly addNamed semver.validRange 1.0.1
+984 silly addNameRange number 2 { name: 'string_decoder',
+984 silly addNameRange   range: '>=0.10.0 <0.11.0',
+984 silly addNameRange   hasData: true }
+985 silly addNameRange versions [ 'string_decoder',
+985 silly addNameRange   [ '0.0.0',
+985 silly addNameRange     '0.0.1',
+985 silly addNameRange     '0.10.24',
+985 silly addNameRange     '0.11.10',
+985 silly addNameRange     '0.10.25',
+985 silly addNameRange     '0.11.10-1',
+985 silly addNameRange     '0.10.25-1',
+985 silly addNameRange     '0.10.31' ] ]
+986 verbose addNamed string_decoder@0.10.31
+987 silly addNamed semver.valid 0.10.31
+988 silly addNamed semver.validRange 0.10.31
+989 silly cache afterAdd debuglog@0.0.2
+990 verbose afterAdd C:\Users\Luke\AppData\Roaming\npm-cache\debuglog\0.0.2\package\package.json not in flight; writing
+991 verbose afterAdd C:\Users\Luke\AppData\Roaming\npm-cache\debuglog\0.0.2\package\package.json written
+992 silly cache afterAdd extsprintf@1.0.2
+993 verbose afterAdd C:\Users\Luke\AppData\Roaming\npm-cache\extsprintf\1.0.2\package\package.json not in flight; writing
+994 verbose afterAdd C:\Users\Luke\AppData\Roaming\npm-cache\extsprintf\1.0.2\package\package.json written
+995 silly install resolved [ { name: 'extsprintf',
+995 silly install resolved     version: '1.0.2',
+995 silly install resolved     description: 'extended POSIX-style sprintf',
+995 silly install resolved     main: './lib/extsprintf.js',
+995 silly install resolved     repository:
+995 silly install resolved      { type: 'git',
+995 silly install resolved        url: 'git://github.com/davepacheco/node-extsprintf.git' },
+995 silly install resolved     engines: [ 'node >=0.6.0' ],
+995 silly install resolved     _id: 'extsprintf@1.0.2',
+995 silly install resolved     dist:
+995 silly install resolved      { shasum: 'e1080e0658e300b06294990cc70e1502235fd550',
+995 silly install resolved        tarball: 'http://registry.npmjs.org/extsprintf/-/extsprintf-1.0.2.tgz' },
+995 silly install resolved     _npmVersion: '1.1.65',
+995 silly install resolved     _npmUser: { name: 'dap', email: 'dap@cs.brown.edu' },
+995 silly install resolved     maintainers: [ [Object] ],
+995 silly install resolved     directories: {},
+995 silly install resolved     _shasum: 'e1080e0658e300b06294990cc70e1502235fd550',
+995 silly install resolved     _resolved: 'https://registry.npmjs.org/extsprintf/-/extsprintf-1.0.2.tgz',
+995 silly install resolved     _from: 'extsprintf@1.0.2',
+995 silly install resolved     bugs: { url: 'https://github.com/davepacheco/node-extsprintf/issues' },
+995 silly install resolved     readme: 'ERROR: No README data found!',
+995 silly install resolved     homepage: 'https://github.com/davepacheco/node-extsprintf' } ]
+996 info install extsprintf@1.0.2 into C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\verror
+997 info installOne extsprintf@1.0.2
+998 verbose installOne of extsprintf to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\verror not in flight; installing
+999 silly cache afterAdd string_decoder@0.10.31
+1000 verbose afterAdd C:\Users\Luke\AppData\Roaming\npm-cache\string_decoder\0.10.31\package\package.json not in flight; writing
+1001 verbose lock using C:\Users\Luke\AppData\Roaming\npm-cache\_locks\extsprintf-4d49ea040d3c629a.lock for C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\verror\node_modules\extsprintf
+1002 silly install write writing extsprintf 1.0.2 to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\verror\node_modules\extsprintf
+1003 silly cache addNamed cb extsprintf@1.0.2
+1004 verbose unbuild node_modules\fast\node_modules\verror\node_modules\extsprintf
+1005 verbose gentlyRm vacuuming C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\verror\node_modules\extsprintf
+1006 verbose tar unpack C:\Users\Luke\AppData\Roaming\npm-cache\extsprintf\1.0.2\package.tgz
+1007 verbose tar unpacking to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\verror\node_modules\extsprintf
+1008 verbose gentlyRm vacuuming C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\verror\node_modules\extsprintf
+1009 silly gunzTarPerm modes [ '777', '666' ]
+1010 verbose afterAdd C:\Users\Luke\AppData\Roaming\npm-cache\string_decoder\0.10.31\package\package.json written
+1011 silly cache afterAdd core-util-is@1.0.1
+1012 verbose afterAdd C:\Users\Luke\AppData\Roaming\npm-cache\core-util-is\1.0.1\package\package.json not in flight; writing
+1013 verbose afterAdd C:\Users\Luke\AppData\Roaming\npm-cache\core-util-is\1.0.1\package\package.json written
+1014 silly install resolved [ { name: 'debuglog',
+1014 silly install resolved     version: '0.0.2',
+1014 silly install resolved     description: 'backport of util.debuglog from node v0.11',
+1014 silly install resolved     license: 'MIT',
+1014 silly install resolved     main: 'debuglog.js',
+1014 silly install resolved     repository:
+1014 silly install resolved      { type: 'git',
+1014 silly install resolved        url: 'https://github.com/sam-github/node-debuglog.git' },
+1014 silly install resolved     author: { name: 'Sam Roberts', email: 'sam@strongloop.com' },
+1014 silly install resolved     engines: { node: '*' },
+1014 silly install resolved     bugs: { url: 'https://github.com/sam-github/node-debuglog/issues' },
+1014 silly install resolved     _id: 'debuglog@0.0.2',
+1014 silly install resolved     dist:
+1014 silly install resolved      { shasum: '6c0dcf07e2c3f74524629b741668bd46c7b362eb',
+1014 silly install resolved        tarball: 'http://registry.npmjs.org/debuglog/-/debuglog-0.0.2.tgz' },
+1014 silly install resolved     _from: 'debuglog@0.0.2',
+1014 silly install resolved     _npmVersion: '1.3.11',
+1014 silly install resolved     _npmUser: { name: 'octet', email: 'sam@strongloop.com' },
+1014 silly install resolved     maintainers: [ [Object] ],
+1014 silly install resolved     directories: {},
+1014 silly install resolved     _shasum: '6c0dcf07e2c3f74524629b741668bd46c7b362eb',
+1014 silly install resolved     _resolved: 'https://registry.npmjs.org/debuglog/-/debuglog-0.0.2.tgz',
+1014 silly install resolved     readme: 'ERROR: No README data found!',
+1014 silly install resolved     homepage: 'https://github.com/sam-github/node-debuglog' },
+1014 silly install resolved   { name: 'string_decoder',
+1014 silly install resolved     version: '0.10.31',
+1014 silly install resolved     description: 'The string_decoder module from Node core',
+1014 silly install resolved     main: 'index.js',
+1014 silly install resolved     dependencies: {},
+1014 silly install resolved     devDependencies: { tap: '~0.4.8' },
+1014 silly install resolved     scripts: { test: 'tap test/simple/*.js' },
+1014 silly install resolved     repository:
+1014 silly install resolved      { type: 'git',
+1014 silly install resolved        url: 'git://github.com/rvagg/string_decoder.git' },
+1014 silly install resolved     homepage: 'https://github.com/rvagg/string_decoder',
+1014 silly install resolved     keywords: [ 'string', 'decoder', 'browser', 'browserify' ],
+1014 silly install resolved     license: 'MIT',
+1014 silly install resolved     gitHead: 'd46d4fd87cf1d06e031c23f1ba170ca7d4ade9a0',
+1014 silly install resolved     bugs: { url: 'https://github.com/rvagg/string_decoder/issues' },
+1014 silly install resolved     _id: 'string_decoder@0.10.31',
+1014 silly install resolved     _shasum: '62e203bc41766c6c28c9fc84301dab1c5310fa94',
+1014 silly install resolved     _from: 'string_decoder@>=0.10.0 <0.11.0',
+1014 silly install resolved     _npmVersion: '1.4.23',
+1014 silly install resolved     _npmUser: { name: 'rvagg', email: 'rod@vagg.org' },
+1014 silly install resolved     maintainers: [ [Object], [Object] ],
+1014 silly install resolved     dist:
+1014 silly install resolved      { shasum: '62e203bc41766c6c28c9fc84301dab1c5310fa94',
+1014 silly install resolved        tarball: 'http://registry.npmjs.org/string_decoder/-/string_decoder-0.10.31.tgz' },
+1014 silly install resolved     directories: {},
+1014 silly install resolved     _resolved: 'https://registry.npmjs.org/string_decoder/-/string_decoder-0.10.31.tgz',
+1014 silly install resolved     readme: 'ERROR: No README data found!' },
+1014 silly install resolved   { name: 'core-util-is',
+1014 silly install resolved     version: '1.0.1',
+1014 silly install resolved     description: 'The `util.is*` functions introduced in Node v0.12.',
+1014 silly install resolved     main: 'lib/util.js',
+1014 silly install resolved     repository: { type: 'git', url: 'git://github.com/isaacs/core-util-is' },
+1014 silly install resolved     keywords:
+1014 silly install resolved      [ 'util',
+1014 silly install resolved        'isBuffer',
+1014 silly install resolved        'isArray',
+1014 silly install resolved        'isNumber',
+1014 silly install resolved        'isString',
+1014 silly install resolved        'isRegExp',
+1014 silly install resolved        'isThis',
+1014 silly install resolved        'isThat',
+1014 silly install resolved        'polyfill' ],
+1014 silly install resolved     author:
+1014 silly install resolved      { name: 'Isaac Z. Schlueter',
+1014 silly install resolved        email: 'i@izs.me',
+1014 silly install resolved        url: 'http://blog.izs.me/' },
+1014 silly install resolved     license: 'MIT',
+1014 silly install resolved     bugs: { url: 'https://github.com/isaacs/core-util-is/issues' },
+1014 silly install resolved     readme: '# core-util-is\n\nThe `util.is*` functions introduced in Node v0.12.\n',
+1014 silly install resolved     readmeFilename: 'README.md',
+1014 silly install resolved     homepage: 'https://github.com/isaacs/core-util-is',
+1014 silly install resolved     _id: 'core-util-is@1.0.1',
+1014 silly install resolved     dist:
+1014 silly install resolved      { shasum: '6b07085aef9a3ccac6ee53bf9d3df0c1521a5538',
+1014 silly install resolved        tarball: 'http://registry.npmjs.org/core-util-is/-/core-util-is-1.0.1.tgz' },
+1014 silly install resolved     _from: 'core-util-is@>=1.0.0 <1.1.0',
+1014 silly install resolved     _npmVersion: '1.3.23',
+1014 silly install resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+1014 silly install resolved     maintainers: [ [Object] ],
+1014 silly install resolved     directories: {},
+1014 silly install resolved     _shasum: '6b07085aef9a3ccac6ee53bf9d3df0c1521a5538',
+1014 silly install resolved     _resolved: 'https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.1.tgz',
+1014 silly install resolved     scripts: {} } ]
+1015 info install debuglog@0.0.2 into C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\readable-stream
+1016 info install string_decoder@0.10.31 into C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\readable-stream
+1017 info install core-util-is@1.0.1 into C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\readable-stream
+1018 info installOne debuglog@0.0.2
+1019 verbose installOne of debuglog to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\readable-stream not in flight; installing
+1020 info installOne string_decoder@0.10.31
+1021 verbose installOne of string_decoder to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\readable-stream not in flight; installing
+1022 info installOne core-util-is@1.0.1
+1023 verbose installOne of core-util-is to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\readable-stream not in flight; installing
+1024 verbose lock using C:\Users\Luke\AppData\Roaming\npm-cache\_locks\debuglog-76f098f1779d946b.lock for C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\readable-stream\node_modules\debuglog
+1025 verbose lock using C:\Users\Luke\AppData\Roaming\npm-cache\_locks\core-util-is-c05b4eba6f421169.lock for C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\readable-stream\node_modules\core-util-is
+1026 silly install write writing debuglog 0.0.2 to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\readable-stream\node_modules\debuglog
+1027 silly cache addNamed cb debuglog@0.0.2
+1028 verbose unbuild node_modules\fast\node_modules\readable-stream\node_modules\debuglog
+1029 verbose lock using C:\Users\Luke\AppData\Roaming\npm-cache\_locks\string-decoder-848380553a355a44.lock for C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\readable-stream\node_modules\string_decoder
+1030 silly install write writing core-util-is 1.0.1 to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\readable-stream\node_modules\core-util-is
+1031 silly cache addNamed cb core-util-is@1.0.1
+1032 verbose unbuild node_modules\fast\node_modules\readable-stream\node_modules\core-util-is
+1033 silly install write writing string_decoder 0.10.31 to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\readable-stream\node_modules\string_decoder
+1034 silly cache addNamed cb string_decoder@0.10.31
+1035 verbose unbuild node_modules\fast\node_modules\readable-stream\node_modules\string_decoder
+1036 verbose gentlyRm vacuuming C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\readable-stream\node_modules\debuglog
+1037 verbose gentlyRm vacuuming C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\readable-stream\node_modules\core-util-is
+1038 verbose tar unpack C:\Users\Luke\AppData\Roaming\npm-cache\debuglog\0.0.2\package.tgz
+1039 verbose tar unpacking to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\readable-stream\node_modules\debuglog
+1040 verbose gentlyRm vacuuming C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\readable-stream\node_modules\debuglog
+1041 verbose gentlyRm vacuuming C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\readable-stream\node_modules\string_decoder
+1042 verbose tar unpack C:\Users\Luke\AppData\Roaming\npm-cache\core-util-is\1.0.1\package.tgz
+1043 verbose tar unpacking to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\readable-stream\node_modules\core-util-is
+1044 verbose gentlyRm vacuuming C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\readable-stream\node_modules\core-util-is
+1045 silly gunzTarPerm modes [ '777', '666' ]
+1046 verbose tar unpack C:\Users\Luke\AppData\Roaming\npm-cache\string_decoder\0.10.31\package.tgz
+1047 verbose tar unpacking to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\readable-stream\node_modules\string_decoder
+1048 verbose gentlyRm vacuuming C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\readable-stream\node_modules\string_decoder
+1049 silly gunzTarPerm modes [ '777', '666' ]
+1050 silly gunzTarPerm modes [ '777', '666' ]
+1051 silly gunzTarPerm extractEntry package.json
+1052 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+1053 silly gunzTarPerm extractEntry README.md
+1054 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+1055 silly gunzTarPerm extractEntry LICENSE
+1056 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+1057 silly gunzTarPerm extractEntry Makefile
+1058 silly gunzTarPerm modified mode [ 'Makefile', 420, 438 ]
+1059 silly gunzTarPerm extractEntry lib/extsprintf.js
+1060 silly gunzTarPerm modified mode [ 'lib/extsprintf.js', 420, 438 ]
+1061 silly gunzTarPerm extractEntry package.json
+1062 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+1063 silly gunzTarPerm extractEntry package.json
+1064 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
+1065 silly gunzTarPerm extractEntry README.md
+1066 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+1067 silly gunzTarPerm extractEntry LICENSE
+1068 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+1069 silly gunzTarPerm extractEntry Makefile.deps
+1070 silly gunzTarPerm modified mode [ 'Makefile.deps', 420, 438 ]
+1071 silly gunzTarPerm extractEntry examples/simple.js
+1072 silly gunzTarPerm modified mode [ 'examples/simple.js', 420, 438 ]
+1073 silly gunzTarPerm extractEntry .npmignore
+1074 silly gunzTarPerm modified mode [ '.npmignore', 436, 438 ]
+1075 silly gunzTarPerm extractEntry README.md
+1076 silly gunzTarPerm modified mode [ 'README.md', 436, 438 ]
+1077 silly gunzTarPerm extractEntry debuglog.js
+1078 silly gunzTarPerm modified mode [ 'debuglog.js', 420, 438 ]
+1079 silly gunzTarPerm extractEntry package.json
+1080 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+1081 silly gunzTarPerm extractEntry Makefile.targ
+1082 silly gunzTarPerm modified mode [ 'Makefile.targ', 420, 438 ]
+1083 silly gunzTarPerm extractEntry .gitmodules
+1084 silly gunzTarPerm modified mode [ '.gitmodules', 420, 438 ]
+1085 silly gunzTarPerm extractEntry jsl.node.conf
+1086 silly gunzTarPerm modified mode [ 'jsl.node.conf', 420, 438 ]
+1087 silly gunzTarPerm extractEntry README.md
+1088 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+1089 silly gunzTarPerm extractEntry util.js
+1090 silly gunzTarPerm modified mode [ 'util.js', 420, 438 ]
+1091 silly gunzTarPerm extractEntry LICENSE
+1092 silly gunzTarPerm modified mode [ 'LICENSE', 436, 438 ]
+1093 silly gunzTarPerm extractEntry index.js
+1094 silly gunzTarPerm modified mode [ 'index.js', 436, 438 ]
+1095 silly gunzTarPerm extractEntry float.patch
+1096 silly gunzTarPerm modified mode [ 'float.patch', 420, 438 ]
+1097 silly gunzTarPerm extractEntry lib/util.js
+1098 silly gunzTarPerm modified mode [ 'lib/util.js', 420, 438 ]
+1099 info preinstall debuglog@0.0.2
+1100 silly install resolved []
+1101 verbose about to build C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\readable-stream\node_modules\debuglog
+1102 info build C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\readable-stream\node_modules\debuglog
+1103 verbose linkStuff [ false,
+1103 verbose linkStuff   false,
+1103 verbose linkStuff   false,
+1103 verbose linkStuff   'C:\\Users\\Luke\\Documents\\Projects\\tcp_pool\\node_modules\\fast\\node_modules\\readable-stream\\node_modules' ]
+1104 info linkStuff debuglog@0.0.2
+1105 verbose linkBins debuglog@0.0.2
+1106 verbose linkMans debuglog@0.0.2
+1107 verbose rebuildBundles debuglog@0.0.2
+1108 info install debuglog@0.0.2
+1109 info postinstall debuglog@0.0.2
+1110 verbose unlock done using C:\Users\Luke\AppData\Roaming\npm-cache\_locks\debuglog-76f098f1779d946b.lock for C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\readable-stream\node_modules\debuglog
+1111 info preinstall string_decoder@0.10.31
+1112 silly install resolved []
+1113 verbose about to build C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\readable-stream\node_modules\string_decoder
+1114 info build C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\readable-stream\node_modules\string_decoder
+1115 verbose linkStuff [ false,
+1115 verbose linkStuff   false,
+1115 verbose linkStuff   false,
+1115 verbose linkStuff   'C:\\Users\\Luke\\Documents\\Projects\\tcp_pool\\node_modules\\fast\\node_modules\\readable-stream\\node_modules' ]
+1116 info linkStuff string_decoder@0.10.31
+1117 verbose linkBins string_decoder@0.10.31
+1118 verbose linkMans string_decoder@0.10.31
+1119 verbose rebuildBundles string_decoder@0.10.31
+1120 info install string_decoder@0.10.31
+1121 info postinstall string_decoder@0.10.31
+1122 info preinstall nan@1.3.0
+1123 verbose unlock done using C:\Users\Luke\AppData\Roaming\npm-cache\_locks\string-decoder-848380553a355a44.lock for C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\readable-stream\node_modules\string_decoder
+1124 silly install resolved []
+1125 verbose about to build C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\microtime\node_modules\nan
+1126 info build C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\microtime\node_modules\nan
+1127 verbose linkStuff [ false,
+1127 verbose linkStuff   false,
+1127 verbose linkStuff   false,
+1127 verbose linkStuff   'C:\\Users\\Luke\\Documents\\Projects\\tcp_pool\\node_modules\\fast\\node_modules\\microtime\\node_modules' ]
+1128 info linkStuff nan@1.3.0
+1129 verbose linkBins nan@1.3.0
+1130 verbose linkMans nan@1.3.0
+1131 verbose rebuildBundles nan@1.3.0
+1132 info install nan@1.3.0
+1133 info postinstall nan@1.3.0
+1134 verbose unlock done using C:\Users\Luke\AppData\Roaming\npm-cache\_locks\nan-4d7f4e6eaca26379.lock for C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\microtime\node_modules\nan
+1135 verbose about to build C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\microtime
+1136 info build C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\microtime
+1137 verbose linkStuff [ false,
+1137 verbose linkStuff   false,
+1137 verbose linkStuff   false,
+1137 verbose linkStuff   'C:\\Users\\Luke\\Documents\\Projects\\tcp_pool\\node_modules\\fast\\node_modules' ]
+1138 info linkStuff microtime@1.0.1
+1139 verbose linkBins microtime@1.0.1
+1140 verbose linkMans microtime@1.0.1
+1141 verbose rebuildBundles microtime@1.0.1
+1142 verbose rebuildBundles [ 'bindings', 'nan' ]
+1143 info install microtime@1.0.1
+1144 verbose unsafe-perm in lifecycle true
+1145 info preinstall core-util-is@1.0.1
+1146 silly install resolved []
+1147 verbose about to build C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\readable-stream\node_modules\core-util-is
+1148 info build C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\readable-stream\node_modules\core-util-is
+1149 verbose linkStuff [ false,
+1149 verbose linkStuff   false,
+1149 verbose linkStuff   false,
+1149 verbose linkStuff   'C:\\Users\\Luke\\Documents\\Projects\\tcp_pool\\node_modules\\fast\\node_modules\\readable-stream\\node_modules' ]
+1150 info linkStuff core-util-is@1.0.1
+1151 verbose linkBins core-util-is@1.0.1
+1152 verbose linkMans core-util-is@1.0.1
+1153 verbose rebuildBundles core-util-is@1.0.1
+1154 info preinstall extsprintf@1.0.2
+1155 info install core-util-is@1.0.1
+1156 info postinstall core-util-is@1.0.1
+1157 silly install resolved []
+1158 verbose about to build C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\verror\node_modules\extsprintf
+1159 info build C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\verror\node_modules\extsprintf
+1160 verbose linkStuff [ false,
+1160 verbose linkStuff   false,
+1160 verbose linkStuff   false,
+1160 verbose linkStuff   'C:\\Users\\Luke\\Documents\\Projects\\tcp_pool\\node_modules\\fast\\node_modules\\verror\\node_modules' ]
+1161 info linkStuff extsprintf@1.0.2
+1162 verbose linkBins extsprintf@1.0.2
+1163 verbose linkMans extsprintf@1.0.2
+1164 verbose rebuildBundles extsprintf@1.0.2
+1165 info install extsprintf@1.0.2
+1166 verbose unlock done using C:\Users\Luke\AppData\Roaming\npm-cache\_locks\core-util-is-c05b4eba6f421169.lock for C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\readable-stream\node_modules\core-util-is
+1167 verbose about to build C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\readable-stream
+1168 info build C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\readable-stream
+1169 verbose linkStuff [ false,
+1169 verbose linkStuff   false,
+1169 verbose linkStuff   false,
+1169 verbose linkStuff   'C:\\Users\\Luke\\Documents\\Projects\\tcp_pool\\node_modules\\fast\\node_modules' ]
+1170 info linkStuff readable-stream@1.1.10
+1171 verbose linkBins readable-stream@1.1.10
+1172 verbose linkMans readable-stream@1.1.10
+1173 verbose rebuildBundles readable-stream@1.1.10
+1174 info postinstall extsprintf@1.0.2
+1175 verbose rebuildBundles [ 'core-util-is', 'debuglog', 'string_decoder' ]
+1176 info install readable-stream@1.1.10
+1177 info preinstall dtrace-provider@0.3.0
+1178 info postinstall readable-stream@1.1.10
+1179 verbose unlock done using C:\Users\Luke\AppData\Roaming\npm-cache\_locks\extsprintf-4d49ea040d3c629a.lock for C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\verror\node_modules\extsprintf
+1180 verbose about to build C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\verror
+1181 info build C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\verror
+1182 verbose linkStuff [ false,
+1182 verbose linkStuff   false,
+1182 verbose linkStuff   false,
+1182 verbose linkStuff   'C:\\Users\\Luke\\Documents\\Projects\\tcp_pool\\node_modules\\fast\\node_modules' ]
+1183 info linkStuff verror@1.3.6
+1184 verbose linkBins verror@1.3.6
+1185 verbose linkMans verror@1.3.6
+1186 verbose rebuildBundles verror@1.3.6
+1187 verbose rebuildBundles [ 'extsprintf' ]
+1188 info install verror@1.3.6
+1189 silly prepareForInstallMany adding nan@~1.3.0 from dtrace-provider dependencies
+1190 verbose unlock done using C:\Users\Luke\AppData\Roaming\npm-cache\_locks\readable-stream-ee9e0c248fa44037.lock for C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\readable-stream
+1191 info postinstall verror@1.3.6
+1192 silly cache add args [ 'nan@~1.3.0', null ]
+1193 verbose cache add spec nan@~1.3.0
+1194 silly cache add parsed spec { raw: 'nan@~1.3.0',
+1194 silly cache add   scope: null,
+1194 silly cache add   name: 'nan',
+1194 silly cache add   rawSpec: '~1.3.0',
+1194 silly cache add   spec: '>=1.3.0 <1.4.0',
+1194 silly cache add   type: 'range' }
+1195 verbose addNamed nan@>=1.3.0 <1.4.0
+1196 silly addNamed semver.valid null
+1197 silly addNamed semver.validRange >=1.3.0 <1.4.0
+1198 silly addNameRange { name: 'nan', range: '>=1.3.0 <1.4.0', hasData: false }
+1199 silly mapToRegistry name nan
+1200 silly mapToRegistry using default registry
+1201 silly mapToRegistry registry https://registry.npmjs.org/
+1202 silly mapToRegistry uri https://registry.npmjs.org/nan
+1203 verbose addNameRange registry:https://registry.npmjs.org/nan not in flight; fetching
+1204 verbose unlock done using C:\Users\Luke\AppData\Roaming\npm-cache\_locks\verror-23d207e98ee2a4d0.lock for C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\verror
+1205 verbose get https://registry.npmjs.org/nan not expired, no request
+1206 silly addNameRange number 2 { name: 'nan', range: '>=1.3.0 <1.4.0', hasData: true }
+1207 silly addNameRange versions [ 'nan',
+1207 silly addNameRange   [ '0.3.0-wip',
+1207 silly addNameRange     '0.3.0-wip2',
+1207 silly addNameRange     '0.3.0',
+1207 silly addNameRange     '0.3.1',
+1207 silly addNameRange     '0.3.2',
+1207 silly addNameRange     '0.4.0',
+1207 silly addNameRange     '0.4.1',
+1207 silly addNameRange     '0.4.2',
+1207 silly addNameRange     '0.4.3',
+1207 silly addNameRange     '0.4.4',
+1207 silly addNameRange     '0.5.0',
+1207 silly addNameRange     '0.5.1',
+1207 silly addNameRange     '0.5.2',
+1207 silly addNameRange     '0.6.0',
+1207 silly addNameRange     '0.7.0',
+1207 silly addNameRange     '0.7.1',
+1207 silly addNameRange     '0.8.0',
+1207 silly addNameRange     '1.0.0',
+1207 silly addNameRange     '1.1.0',
+1207 silly addNameRange     '1.1.1',
+1207 silly addNameRange     '1.1.2',
+1207 silly addNameRange     '1.2.0',
+1207 silly addNameRange     '1.3.0',
+1207 silly addNameRange     '1.4.0',
+1207 silly addNameRange     '1.4.1',
+1207 silly addNameRange     '1.5.0',
+1207 silly addNameRange     '1.4.2',
+1207 silly addNameRange     '1.4.3',
+1207 silly addNameRange     '1.5.1',
+1207 silly addNameRange     '1.5.2',
+1207 silly addNameRange     '1.6.0',
+1207 silly addNameRange     '1.5.3',
+1207 silly addNameRange     '1.6.1',
+1207 silly addNameRange     '1.6.2',
+1207 silly addNameRange     '1.7.0' ] ]
+1208 verbose addNamed nan@1.3.0
+1209 silly addNamed semver.valid 1.3.0
+1210 silly addNamed semver.validRange 1.3.0
+1211 silly cache afterAdd nan@1.3.0
+1212 verbose afterAdd C:\Users\Luke\AppData\Roaming\npm-cache\nan\1.3.0\package\package.json not in flight; writing
+1213 verbose afterAdd C:\Users\Luke\AppData\Roaming\npm-cache\nan\1.3.0\package\package.json written
+1214 silly install resolved [ { name: 'nan',
+1214 silly install resolved     version: '1.3.0',
+1214 silly install resolved     description: 'Native Abstractions for Node.js: C++ header for Node 0.8->0.12 compatibility',
+1214 silly install resolved     main: 'include_dirs.js',
+1214 silly install resolved     repository: { type: 'git', url: 'git://github.com/rvagg/nan.git' },
+1214 silly install resolved     scripts:
+1214 silly install resolved      { test: 'tap --gc test/js/*-test.js',
+1214 silly install resolved        'rebuild-tests': 'node-gyp rebuild --directory test' },
+1214 silly install resolved     contributors: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+1214 silly install resolved     devDependencies:
+1214 silly install resolved      { bindings: '~1.2.1',
+1214 silly install resolved        'node-gyp': '~1.0.1',
+1214 silly install resolved        tap: '~0.4.12',
+1214 silly install resolved        xtend: '~4.0.0' },
+1214 silly install resolved     license: 'MIT',
+1214 silly install resolved     gitHead: 'e482fbe142e58373d5a24f4e5a60c61e22a13f83',
+1214 silly install resolved     bugs: { url: 'https://github.com/rvagg/nan/issues' },
+1214 silly install resolved     homepage: 'https://github.com/rvagg/nan',
+1214 silly install resolved     _id: 'nan@1.3.0',
+1214 silly install resolved     _shasum: '9a5b8d5ef97a10df3050e59b2c362d3baf779742',
+1214 silly install resolved     _from: 'nan@>=1.3.0 <1.4.0',
+1214 silly install resolved     _npmVersion: '1.4.21',
+1214 silly install resolved     _npmUser: { name: 'rvagg', email: 'rod@vagg.org' },
+1214 silly install resolved     maintainers: [ [Object] ],
+1214 silly install resolved     dist:
+1214 silly install resolved      { shasum: '9a5b8d5ef97a10df3050e59b2c362d3baf779742',
+1214 silly install resolved        tarball: 'http://registry.npmjs.org/nan/-/nan-1.3.0.tgz' },
+1214 silly install resolved     directories: {},
+1214 silly install resolved     _resolved: 'https://registry.npmjs.org/nan/-/nan-1.3.0.tgz',
+1214 silly install resolved     readme: 'ERROR: No README data found!' } ]
+1215 info install nan@1.3.0 into C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\dtrace-provider
+1216 info installOne nan@1.3.0
+1217 verbose installOne of nan to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\dtrace-provider not in flight; installing
+1218 verbose lock using C:\Users\Luke\AppData\Roaming\npm-cache\_locks\nan-e4917531bcffbd98.lock for C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\dtrace-provider\node_modules\nan
+1219 silly install write writing nan 1.3.0 to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\dtrace-provider\node_modules\nan
+1220 silly cache addNamed cb nan@1.3.0
+1221 verbose unbuild node_modules\fast\node_modules\dtrace-provider\node_modules\nan
+1222 verbose gentlyRm vacuuming C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\dtrace-provider\node_modules\nan
+1223 verbose tar unpack C:\Users\Luke\AppData\Roaming\npm-cache\nan\1.3.0\package.tgz
+1224 verbose tar unpacking to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\dtrace-provider\node_modules\nan
+1225 verbose gentlyRm vacuuming C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\dtrace-provider\node_modules\nan
+1226 silly gunzTarPerm modes [ '777', '666' ]
+1227 silly gunzTarPerm extractEntry package.json
+1228 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
+1229 silly gunzTarPerm extractEntry README.md
+1230 silly gunzTarPerm modified mode [ 'README.md', 436, 438 ]
+1231 silly gunzTarPerm extractEntry LICENSE
+1232 silly gunzTarPerm modified mode [ 'LICENSE', 436, 438 ]
+1233 silly gunzTarPerm extractEntry include_dirs.js
+1234 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 438 ]
+1235 silly gunzTarPerm extractEntry CHANGELOG.md
+1236 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 438 ]
+1237 silly gunzTarPerm extractEntry .dntrc
+1238 silly gunzTarPerm modified mode [ '.dntrc', 436, 438 ]
+1239 silly gunzTarPerm extractEntry nan.h
+1240 silly gunzTarPerm modified mode [ 'nan.h', 436, 438 ]
+1241 silly gunzTarPerm extractEntry appveyor.yml
+1242 silly gunzTarPerm modified mode [ 'appveyor.yml', 436, 438 ]
+1243 info preinstall nan@1.3.0
+1244 silly install resolved []
+1245 verbose about to build C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\dtrace-provider\node_modules\nan
+1246 info build C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\dtrace-provider\node_modules\nan
+1247 verbose linkStuff [ false,
+1247 verbose linkStuff   false,
+1247 verbose linkStuff   false,
+1247 verbose linkStuff   'C:\\Users\\Luke\\Documents\\Projects\\tcp_pool\\node_modules\\fast\\node_modules\\dtrace-provider\\node_modules' ]
+1248 info linkStuff nan@1.3.0
+1249 verbose linkBins nan@1.3.0
+1250 verbose linkMans nan@1.3.0
+1251 verbose rebuildBundles nan@1.3.0
+1252 info install nan@1.3.0
+1253 info postinstall nan@1.3.0
+1254 verbose unlock done using C:\Users\Luke\AppData\Roaming\npm-cache\_locks\nan-e4917531bcffbd98.lock for C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\dtrace-provider\node_modules\nan
+1255 verbose about to build C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\dtrace-provider
+1256 info build C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\dtrace-provider
+1257 verbose linkStuff [ false,
+1257 verbose linkStuff   false,
+1257 verbose linkStuff   false,
+1257 verbose linkStuff   'C:\\Users\\Luke\\Documents\\Projects\\tcp_pool\\node_modules\\fast\\node_modules' ]
+1258 info linkStuff dtrace-provider@0.3.0
+1259 verbose linkBins dtrace-provider@0.3.0
+1260 verbose linkMans dtrace-provider@0.3.0
+1261 verbose rebuildBundles dtrace-provider@0.3.0
+1262 verbose rebuildBundles [ 'nan' ]
+1263 info install dtrace-provider@0.3.0
+1264 info preinstall backoff@2.4.0
+1265 silly prepareForInstallMany adding precond@0.2 from backoff dependencies
+1266 silly cache add args [ 'precond@0.2', null ]
+1267 verbose cache add spec precond@0.2
+1268 silly cache add parsed spec { raw: 'precond@0.2',
+1268 silly cache add   scope: null,
+1268 silly cache add   name: 'precond',
+1268 silly cache add   rawSpec: '0.2',
+1268 silly cache add   spec: '>=0.2.0 <0.3.0',
+1268 silly cache add   type: 'range' }
+1269 verbose addNamed precond@>=0.2.0 <0.3.0
+1270 silly addNamed semver.valid null
+1271 silly addNamed semver.validRange >=0.2.0 <0.3.0
+1272 silly addNameRange { name: 'precond', range: '>=0.2.0 <0.3.0', hasData: false }
+1273 silly mapToRegistry name precond
+1274 silly mapToRegistry using default registry
+1275 silly mapToRegistry registry https://registry.npmjs.org/
+1276 silly mapToRegistry uri https://registry.npmjs.org/precond
+1277 verbose addNameRange registry:https://registry.npmjs.org/precond not in flight; fetching
+1278 verbose request uri https://registry.npmjs.org/precond
+1279 verbose request no auth needed
+1280 info attempt registry request try #1 at 12:51:57 PM
+1281 verbose etag "EOEMLTO6QDUBX4RW8N009SDJ9"
+1282 http request GET https://registry.npmjs.org/precond
+1283 http 304 https://registry.npmjs.org/precond
+1284 silly get cb [ 304,
+1284 silly get   { date: 'Wed, 15 Apr 2015 16:52:02 GMT',
+1284 silly get     server: 'Apache',
+1284 silly get     via: '1.1 varnish',
+1284 silly get     'last-modified': 'Wed, 15 Apr 2015 16:52:02 GMT',
+1284 silly get     'cache-control': 'max-age=60',
+1284 silly get     etag: '"EOEMLTO6QDUBX4RW8N009SDJ9"',
+1284 silly get     age: '56',
+1284 silly get     'x-served-by': 'cache-atl6232-ATL',
+1284 silly get     'x-cache': 'HIT',
+1284 silly get     'x-cache-hits': '1',
+1284 silly get     'x-timer': 'S1429116722.537318,VS0,VE1',
+1284 silly get     vary: 'Accept',
+1284 silly get     'content-length': '0',
+1284 silly get     'keep-alive': 'timeout=10, max=50',
+1284 silly get     connection: 'Keep-Alive' } ]
+1285 verbose etag https://registry.npmjs.org/precond from cache
+1286 verbose get saving precond to C:\Users\Luke\AppData\Roaming\npm-cache\registry.npmjs.org\precond\.cache.json
+1287 silly addNameRange number 2 { name: 'precond', range: '>=0.2.0 <0.3.0', hasData: true }
+1288 silly addNameRange versions [ 'precond',
+1288 silly addNameRange   [ '0.1.0', '0.1.1', '0.2.0', '0.2.1', '0.2.2', '0.2.3' ] ]
+1289 verbose addNamed precond@0.2.3
+1290 silly addNamed semver.valid 0.2.3
+1291 silly addNamed semver.validRange 0.2.3
+1292 silly cache afterAdd precond@0.2.3
+1293 verbose afterAdd C:\Users\Luke\AppData\Roaming\npm-cache\precond\0.2.3\package\package.json not in flight; writing
+1294 verbose afterAdd C:\Users\Luke\AppData\Roaming\npm-cache\precond\0.2.3\package\package.json written
+1295 silly install resolved [ { name: 'precond',
+1295 silly install resolved     description: 'Precondition checking utilities.',
+1295 silly install resolved     version: '0.2.3',
+1295 silly install resolved     author: { name: 'Mathieu Turcotte', email: 'turcotte.mat@gmail.com' },
+1295 silly install resolved     keywords: [ 'precondition', 'assert', 'invariant', 'contract', 'condition' ],
+1295 silly install resolved     repository:
+1295 silly install resolved      { type: 'git',
+1295 silly install resolved        url: 'https://github.com/MathieuTurcotte/node-precond.git' },
+1295 silly install resolved     devDependencies: { nodeunit: '0.9', jshint: '2.5' },
+1295 silly install resolved     scripts:
+1295 silly install resolved      { pretest: 'jshint lib/ examples/ index.js',
+1295 silly install resolved        test: 'nodeunit tests/' },
+1295 silly install resolved     engines: { node: '>= 0.6' },
+1295 silly install resolved     files: [ 'index.js', 'lib' ],
+1295 silly install resolved     bugs: { url: 'https://github.com/MathieuTurcotte/node-precond/issues' },
+1295 silly install resolved     _id: 'precond@0.2.3',
+1295 silly install resolved     dist:
+1295 silly install resolved      { shasum: 'aa9591bcaa24923f1e0f4849d240f47efc1075ac',
+1295 silly install resolved        tarball: 'http://registry.npmjs.org/precond/-/precond-0.2.3.tgz' },
+1295 silly install resolved     _from: 'precond@>=0.2.0 <0.3.0',
+1295 silly install resolved     _npmVersion: '1.3.11',
+1295 silly install resolved     _npmUser: { name: 'mathieu', email: 'turcotte.mat@gmail.com' },
+1295 silly install resolved     maintainers: [ [Object] ],
+1295 silly install resolved     directories: {},
+1295 silly install resolved     _shasum: 'aa9591bcaa24923f1e0f4849d240f47efc1075ac',
+1295 silly install resolved     _resolved: 'https://registry.npmjs.org/precond/-/precond-0.2.3.tgz',
+1295 silly install resolved     readme: 'ERROR: No README data found!',
+1295 silly install resolved     homepage: 'https://github.com/MathieuTurcotte/node-precond' } ]
+1296 info install precond@0.2.3 into C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\backoff
+1297 info installOne precond@0.2.3
+1298 verbose installOne of precond to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\backoff not in flight; installing
+1299 verbose lock using C:\Users\Luke\AppData\Roaming\npm-cache\_locks\precond-3fd01d8e66b2cdcd.lock for C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\backoff\node_modules\precond
+1300 silly install write writing precond 0.2.3 to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\backoff\node_modules\precond
+1301 silly cache addNamed cb precond@0.2.3
+1302 verbose unbuild node_modules\fast\node_modules\backoff\node_modules\precond
+1303 verbose gentlyRm vacuuming C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\backoff\node_modules\precond
+1304 verbose tar unpack C:\Users\Luke\AppData\Roaming\npm-cache\precond\0.2.3\package.tgz
+1305 verbose tar unpacking to C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\backoff\node_modules\precond
+1306 verbose gentlyRm vacuuming C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\backoff\node_modules\precond
+1307 silly gunzTarPerm modes [ '777', '666' ]
+1308 silly gunzTarPerm extractEntry package.json
+1309 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+1310 silly gunzTarPerm extractEntry README.md
+1311 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+1312 silly gunzTarPerm extractEntry index.js
+1313 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+1314 silly gunzTarPerm extractEntry lib/checks.js
+1315 silly gunzTarPerm modified mode [ 'lib/checks.js', 420, 438 ]
+1316 silly gunzTarPerm extractEntry lib/errors.js
+1317 silly gunzTarPerm modified mode [ 'lib/errors.js', 420, 438 ]
+1318 info preinstall precond@0.2.3
+1319 silly install resolved []
+1320 verbose about to build C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\backoff\node_modules\precond
+1321 info build C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\backoff\node_modules\precond
+1322 verbose linkStuff [ false,
+1322 verbose linkStuff   false,
+1322 verbose linkStuff   false,
+1322 verbose linkStuff   'C:\\Users\\Luke\\Documents\\Projects\\tcp_pool\\node_modules\\fast\\node_modules\\backoff\\node_modules' ]
+1323 info linkStuff precond@0.2.3
+1324 verbose linkBins precond@0.2.3
+1325 verbose linkMans precond@0.2.3
+1326 verbose rebuildBundles precond@0.2.3
+1327 info install precond@0.2.3
+1328 info postinstall precond@0.2.3
+1329 verbose unlock done using C:\Users\Luke\AppData\Roaming\npm-cache\_locks\precond-3fd01d8e66b2cdcd.lock for C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\backoff\node_modules\precond
+1330 verbose about to build C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\backoff
+1331 info build C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\backoff
+1332 verbose linkStuff [ false,
+1332 verbose linkStuff   false,
+1332 verbose linkStuff   false,
+1332 verbose linkStuff   'C:\\Users\\Luke\\Documents\\Projects\\tcp_pool\\node_modules\\fast\\node_modules' ]
+1333 info linkStuff backoff@2.4.0
+1334 verbose linkBins backoff@2.4.0
+1335 verbose linkMans backoff@2.4.0
+1336 verbose rebuildBundles backoff@2.4.0
+1337 verbose rebuildBundles [ 'precond' ]
+1338 info install backoff@2.4.0
+1339 info postinstall backoff@2.4.0
+1340 verbose unlock done using C:\Users\Luke\AppData\Roaming\npm-cache\_locks\backoff-771b76d5e1cb726a.lock for C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\backoff
+1341 info microtime@1.0.1 Failed to exec install script
+1342 verbose unsafe-perm in lifecycle true
+1343 verbose unlock done using C:\Users\Luke\AppData\Roaming\npm-cache\_locks\microtime-bb7e09a4efe784b5.lock for C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\microtime
+1344 info dtrace-provider@0.3.0 Failed to exec install script
+1345 verbose unlock done using C:\Users\Luke\AppData\Roaming\npm-cache\_locks\dtrace-provider-bf49dfdd3e5fe888.lock for C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\dtrace-provider
+1346 warn optional dep failed, continuing dtrace-provider@0.3.0
+1347 verbose optional dep failed, continuing [ 'dtrace-provider@0.3.0',
+1347 verbose optional dep failed, continuing   { [Error: dtrace-provider@0.3.0 install: `scripts/install.js`
+1347 verbose optional dep failed, continuing   Exit status 1]
+1347 verbose optional dep failed, continuing     code: 'ELIFECYCLE',
+1347 verbose optional dep failed, continuing     pkgid: 'dtrace-provider@0.3.0',
+1347 verbose optional dep failed, continuing     stage: 'install',
+1347 verbose optional dep failed, continuing     script: 'scripts/install.js',
+1347 verbose optional dep failed, continuing     pkgname: 'dtrace-provider' } ]
+1348 verbose about to build C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast
+1349 verbose unlock done using C:\Users\Luke\AppData\Roaming\npm-cache\_locks\fast-b45fbd47d88d3211.lock for C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast
+1350 verbose stack Error: microtime@1.0.1 install: `node-gyp rebuild`
+1350 verbose stack Exit status 1
+1350 verbose stack     at EventEmitter.<anonymous> (C:\Program Files (x86)\nodejs\node_modules\npm\lib\utils\lifecycle.js:213:16)
+1350 verbose stack     at EventEmitter.emit (events.js:110:17)
+1350 verbose stack     at ChildProcess.<anonymous> (C:\Program Files (x86)\nodejs\node_modules\npm\lib\utils\spawn.js:14:12)
+1350 verbose stack     at ChildProcess.emit (events.js:110:17)
+1350 verbose stack     at maybeClose (child_process.js:1008:16)
+1350 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1080:5)
+1351 verbose pkgid microtime@1.0.1
+1352 verbose cwd C:\Users\Luke\Documents\Projects\tcp_pool
+1353 error Windows_NT 6.1.7601
+1354 error argv "C:\\Program Files (x86)\\nodejs\\\\node.exe" "C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+1355 error node v0.12.0
+1356 error npm  v2.5.1
+1357 error code ELIFECYCLE
+1358 error microtime@1.0.1 install: `node-gyp rebuild`
+1358 error Exit status 1
+1359 error Failed at the microtime@1.0.1 install script 'node-gyp rebuild'.
+1359 error This is most likely a problem with the microtime package,
+1359 error not with npm itself.
+1359 error Tell the author that this fails on your system:
+1359 error     node-gyp rebuild
+1359 error You can get their info via:
+1359 error     npm owner ls microtime
+1359 error There is likely additional logging output above.
+1360 verbose exit [ 1, true ]
+1361 verbose unbuild node_modules\fast\node_modules\microtime
+1362 info preuninstall microtime@1.0.1
+1363 info uninstall microtime@1.0.1
+1364 verbose unbuild rmStuff microtime@1.0.1 from C:\Users\Luke\Documents\Projects\tcp_pool\node_modules
+1365 verbose unbuild rmStuff in C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules
+1366 info postuninstall microtime@1.0.1
+1367 verbose gentlyRm vacuuming C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\microtime
+1368 silly gentlyRm purging C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\microtime
+1369 silly gentlyRm quitting because other entries in C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules
+1370 verbose unbuild node_modules\fast\node_modules\dtrace-provider
+1371 info preuninstall dtrace-provider@0.3.0
+1372 info uninstall dtrace-provider@0.3.0
+1373 verbose unbuild rmStuff dtrace-provider@0.3.0 from C:\Users\Luke\Documents\Projects\tcp_pool\node_modules
+1374 verbose unbuild rmStuff in C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules
+1375 info postuninstall dtrace-provider@0.3.0
+1376 verbose gentlyRm vacuuming C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\dtrace-provider
+1377 silly gentlyRm purging C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules\dtrace-provider
+1378 silly gentlyRm quitting because other entries in C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast\node_modules
+1379 verbose unbuild node_modules\fast
+1380 info preuninstall fast@0.4.1
+1381 info uninstall fast@0.4.1
+1382 verbose unbuild rmStuff fast@0.4.1 from C:\Users\Luke\Documents\Projects\tcp_pool\node_modules
+1383 info postuninstall fast@0.4.1
+1384 verbose gentlyRm vacuuming C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast
+1385 silly gentlyRm purging C:\Users\Luke\Documents\Projects\tcp_pool\node_modules\fast
+1386 silly gentlyRm quitting because other entries in C:\Users\Luke\Documents\Projects\tcp_pool\node_modules
