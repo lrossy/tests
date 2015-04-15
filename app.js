@@ -13,11 +13,11 @@ var pool = poolModule.Pool({
         // parameter order: err, resource
         // new in 1.0.6
         RPCclient.on('connect', function () {
-            logger.debug(logSystem, 'API', 'RPC@' + uri + '> Connected!');
+            console.log('API ' + ' RPC@' + uri + '> Connected!');
             callback(null, RPCclient);
         });
         RPCclient.on('error', function (err) {
-            logger.error(logSystem, 'TCP-RPC Pool Connection', 'RPC@' + host + ':'+ RPCport + '>',err);
+            console.log('TCP-RPC Pool Connection ' +  ' RPC@' + host + ':'+ RPCport + '>',err);
             callback("connection Error");
         });
     },
@@ -30,9 +30,9 @@ var pool = poolModule.Pool({
         return (typeof rpcclient.rpc === 'function')
     },
     //validate  : function(rpcclient) { return (typeof rpcclient.rpc === 'function') },
-    max      : 200,
+    max      : 1,
     // optional. if you set this, make sure to drain() (see step 3)
-    min      : 2,
+    min      : 1,
     // specifies how long a resource can stay idle in pool before being removed
     idleTimeoutMillis : 0,
     refreshIdle:false,
@@ -58,7 +58,14 @@ app.post('/', function (req, res) {
 });
 
 
-app.get('/about', function (req, res) {
+app.get('/aquire', function (req, res) {
+
+    logImp(req, function(e, obj){
+        console.log('e', e);
+        console.log('obj', obj);
+
+    });
+
     res.send('about');
 });
 
@@ -70,3 +77,28 @@ var server = app.listen(3000, function () {
     console.log('Example app listening at http://%s:%s', host, port);
 
 });
+
+var logImp = function (pre, next) {
+    pool.acquire(function(err, rpcclient) {
+        if (err || !rpcclient ||!rpcclient.rpc) {
+            pool.destroy(rpcclient);
+            return next("error");
+        }
+        var req = rpcclient.rpc('impression', pre.imp.impID);
+        req.on('message', function (obj) {
+            next(null, obj);
+        });
+        req.on('error', function (err) {
+            // send error
+            if(err.message && err.message ==='no connection') {
+                pool.destroy(rpcclient);
+            }else{
+                pool.release(rpcclient);
+            }
+            next(err);
+        });
+        req.on('end', function () {
+            pool.release(rpcclient);
+        });
+    });
+};
